@@ -17,7 +17,7 @@ Oppaan tekee valtuutettu Oskari Summanen. Asiakirjoista poimitut tiedot ja oma t
 ## Ominaisuudet
 
 - Näkymät: tilannekuva, asiat pykälittäin, investoinnit (talousarviokokouksissa), nousseet kysymykset sekä tarkennukset ja lähteet
-- Asukas ja talous -näkymä: valtionosuuksien erittely, valtionosuuden muutos ikäryhmittäin, uuden asukkaan vaikutus talouteen ja laskuri esimerkkitaloudelle
+- Asukas ja talous -näkymä: valtionosuuksien erittely, valtionosuuden muutos ikäryhmittäin, uuden asukkaan vaikutus talouteen, laskuri esimerkkitaloudelle ja vertailu naapurikuntiin
 - Investoinnit-näkymä: yhteenveto toimielimittäin, hankkeet vuosittain koko suunnittelukaudelta ja suunnittelukauden ulkopuolelle jäävät hankkeet
 - Jokaisessa asiassa nykytilanne → esitys -vertailu: nykyinen arvo, ehdotettu arvo ja muutos sekä vuosi ja tiedon laji (talousarvio, ennuste, toteuma)
 - Asiat jaettu osiin: todettu ja päätösehdotus, oma tilannearvio, huomioitavaa ja avoimia kohtia, nousseet kysymykset

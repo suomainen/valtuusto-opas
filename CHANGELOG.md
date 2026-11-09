@@ -2,6 +2,10 @@
 
 Versionumero on muotoa **pää.osa.korjaus**: pää = sivuston tai oppaan rakenteen kokonaan uusi versio, osa = uusi kokousopas tai ominaisuus, korjaus = pieni korjaus tai tarkennus. Uusin versio ensin.
 
+## 1.7.0
+
+- Asukas ja talous -välilehdelle vertailu naapurikuntiin (Kaarina, Lieto, Marttila, Salo, Sauvo): valtionosuudet €/asukas 2027 (Kuntaliiton ennakkolaskelma), ikärakenne 2025, tuloveroprosentti 2026 ja laskennalliset verotulot €/asukas sekä perusopetuksen kustannus €/oppilas 2024 (oma laskelma Vipusen tiedoista). Jokainen kaavio on taulukko, jossa pylväät havainnollistavat lukuja; Paimion rivi on korostettu.
+
 ## 1.6.0
 
 - Oppaaseen 11.11.2026 uusi välilehti ”Asukas ja talous”: valtionosuudet talousarviossa (TA2026 → TA2027), valtionosuuden laskentatapa ja muutos ikäryhmittäin (perushinnat 2026, omarahoitusosuus 1 548,79 €/asukas), uuden asukkaan vaikutus ikäryhmittäin sekä laskuri esimerkkitaloudelle. Luvut ovat suuntaa antavia ja lähteistettyjä.
