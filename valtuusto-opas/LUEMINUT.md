@@ -33,7 +33,7 @@ Skriptit tarvitsevat vain Python 3:n. Lisäkirjastoja ei tarvita.
    ```
    python scripts/prepare_meeting.py esityslista.json kokous.json
    ```
-5. Lisää `kokous.json`:n `meeting`-osaan `"home": "../index.html"`, jotta oppaassa näkyy paluulinkki etusivulle. Täydennä `kokous.json` aineiston perusteella [SKILL.md](SKILL.md):n ja kenttäkuvauksen [references/tietorakenne.md](references/tietorakenne.md) mukaan. Täytetty malli on `examples/kokous-esimerkki.json`.
+5. Lisää `kokous.json`:n `meeting`-osaan `"home": "../index.html"` ja `"contact": "oskari@summanen.org"`, jotta oppaassa näkyvät paluulinkki etusivulle ja virheilmoitusten osoite. Täydennä `kokous.json` aineiston perusteella [SKILL.md](SKILL.md):n ja kenttäkuvauksen [references/tietorakenne.md](references/tietorakenne.md) mukaan. Täytetty malli on `examples/kokous-esimerkki.json`.
 6. Rakenna opas:
    ```
    python scripts/build_guide.py kokous.json ../oppaat/paimio-valtuusto-PP-KK-VVVV.html

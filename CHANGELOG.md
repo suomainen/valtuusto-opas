@@ -2,6 +2,11 @@
 
 Versionumero on muotoa **pää.osa.korjaus**: pää = sivuston tai oppaan rakenteen kokonaan uusi versio, osa = uusi kokousopas tai ominaisuus, korjaus = pieni korjaus tai tarkennus. Uusin versio ensin.
 
+## 1.3.0
+
+- Tekoälyhuomautus: oppaan tilannekuvaan "Tekoälyn kokoama opas" -osio, jokaisen näkymän alatunnisteeseen lyhyt maininta ja etusivulle "Tietoa oppaista". Lukijaa pyydetään tarkistamaan olennaiset tiedot alkuperäisistä asiakirjoista ja ilmoittamaan virheistä.
+- HTML-pohjaan sama huomautus ja valinnainen `meeting.contact`-kenttä virheilmoitusten osoitteelle.
+
 ## 1.2.0
 
 - Oppaasta paluulinkki etusivulle: "← Kaikki kokousoppaat" otsikkoalueen yläreunassa ja alatunnisteessa.

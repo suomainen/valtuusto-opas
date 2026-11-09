@@ -5,6 +5,8 @@ Selattavat kokousoppaat Paimion kaupunginvaltuuston kokouksiin ja työkalu niide
 Sivusto: **https://suomainen.github.io/valtuusto-opas/**
 
 > **Huom.** Oppaat ovat valtuutetun epävirallista valmistautumisaineistoa. Ne eivät ole Paimion kaupungin julkaisuja eivätkä kaupungin kantoja. Viralliset esityslistat, liitteet ja pöytäkirjat ovat kaupungin [kokousjulkaisussa](https://julkaisu.paimio.fi/dynasty10/).
+>
+> Oppaat on koottu tekoälyavustajan avulla, ja ne voivat sisältää virheitä. Tarkista olennaiset tiedot alkuperäisistä asiakirjoista. Korjaukset ja huomiot: oskari@summanen.org tai [GitHubin issues](https://github.com/suomainen/valtuusto-opas/issues).
 
 ## Tausta
 
@@ -111,7 +113,7 @@ Versionumero on muotoa **pää.osa.korjaus**: pää = rakenteen kokonaan uusi ve
 
 ## Miten sivu on tehty
 
-Oppaat, HTML-pohja ja skriptit on laadittu tekoälyavustajien kanssa: opas ja skill ChatGPT:n ja Codexin avulla, GitHub-julkaisu ja saavutettavuuskorjaukset Clauden kanssa. Tekijä on tarkistanut sisällön ja vastaa tilannearvioista.
+Oppaat, HTML-pohja ja skriptit on laadittu tekoälyavustajien kanssa: opas ja skill ChatGPT:n ja Codexin avulla, GitHub-julkaisu ja saavutettavuuskorjaukset Clauden kanssa. Tilannearviot ovat tekijän omia.
 
 ## Lisätietoa
 

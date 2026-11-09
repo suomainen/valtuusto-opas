@@ -37,7 +37,7 @@ Voit kokeilla rakentamista suoraan täytetystä esimerkistä komennolla `python 
 
 ## Kokous-JSONin kentät
 
-- `meeting.time` ja `meeting.venue` ovat valinnaisia. `meeting.sources` voi sisältää koko oppaan yhteisiä lähteitä ja säädöslinkkejä. Valinnainen `meeting.home` on paluulinkin osoite oppaiden luetteloon, esimerkiksi `"../index.html"`, kun opas tallennetaan repon `oppaat`-kansioon. Ilman sitä paluulinkkiä ei näytetä.
+- `meeting.time` ja `meeting.venue` ovat valinnaisia. `meeting.sources` voi sisältää koko oppaan yhteisiä lähteitä ja säädöslinkkejä. Valinnainen `meeting.home` on paluulinkin osoite oppaiden luetteloon, esimerkiksi `"../index.html"`, kun opas tallennetaan repon `oppaat`-kansioon. Ilman sitä paluulinkkiä ei näytetä. Valinnainen `meeting.contact` on sähköpostiosoite, johon lukija voi ilmoittaa virheistä; se näkyy tilannekuvan tekoälyhuomautuksessa.
 - `overview.stats`, `overview.highlights`, `overview.sources` ja `overview.comparisonNote` ovat valinnaisia. Nostoissa ja tarkennuksissa `n` viittaa olemassa olevaan pykälään.
 - Jokaisella pykälällä on `facts`, `risks` ja `questions` tekstilistoina. Tyhjä lista sopii, jos riskiä tai kysymystä ei noussut. `critical` on valinnainen huomion merkki. `sources` sisältää pykälän muut lähteet.
 - Jokaisella pykälällä on `comparison.note`. Jos vertailtavaa lukua ei ole, selitä syy siinä. `rows` voi silloin puuttua. Oletuksena jokainen rivi sisältää neljä solua. `headers` voi korvata oletusotsikot esimerkiksi toteumavertailussa.
@@ -411,6 +411,7 @@ tbody th{font:inherit;color:inherit;letter-spacing:0;text-align:left}
 .toast:empty{display:none}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.priority:hover{transform:none}}
 .home{display:inline-flex;gap:6px;align-items:center;color:#fff;font-size:14px;margin-bottom:12px;text-underline-offset:3px}.home:hover{text-decoration-thickness:2px}.home:focus-visible{outline-color:var(--yellow)}
+.ai-note{border-left:5px solid var(--blue);padding:4px 0 4px 22px;margin:26px 0;max-width:820px}.ai-note h3{margin:0 0 8px}.ai-note p{margin:0 0 10px}.ai-note p:last-child{margin-bottom:0}
 @media print{.skip,.sr,.home{display:none!important}}
 </style>
 </head>
@@ -446,6 +447,7 @@ function overview() {
   const highlights = summary.highlights || [];
   return `<div class="intro"><div class="eyebrow">Kokouksen tilannekuva</div><h2>${escape(summary.title)}</h2>
     <p class="lead">${escape(summary.lead)}</p><p class="sub">${escape(meeting.stage)} Avaa asia esityslistasta tai käytä hakua.</p></div>
+    <section class="ai-note" aria-labelledby="ai-note-h"><h3 id="ai-note-h">Tekoälyn kokoama opas</h3><p>Opas on koottu tekoälyavustajan avulla kaupungin julkaisemasta esityslistasta ja liitteistä. Tekoäly voi lukea asiakirjan väärin, laskea virheellisesti tai jättää jotain olennaista huomaamatta. Tilannearviot ja kysymykset ovat tekijän näkemyksiä, eivät kaupungin kantoja.</p><p>Tarkista päätöksen kannalta tärkeät luvut ja tiedot alkuperäisistä asiakirjoista, joihin opas linkittää. Jos huomaat virheen tai puutteen, ilmoita siitä: oppaan saa korjata ja täydentää.</p>${meeting.contact ? `<p>Korjaukset ja huomiot: <a href="mailto:${escape(meeting.contact)}">${escape(meeting.contact)}</a>.</p>` : ''}</section>
     ${stats.length ? `<div class="stats">${stats.map(({label, value, note}) => `<div class="stat">
       <span class="small">${escape(label)}</span><span class="value">${escape(value)}</span>
       <p class="small">${escape(note)}</p></div>`).join('')}</div>` : ''}
@@ -524,7 +526,7 @@ function render() {
   setTitle();
   el('panel').setAttribute('aria-labelledby', 'tab-' + view);
   el('panel').innerHTML = ({overview, item, questions, sources})[view]() +
-    `<footer>Valtuutetun valmistautumisaineisto · Aineisto tarkistettu ${escape(meeting.reviewed)} · ${escape(meeting.stage)}${meeting.home ? ` <a href="${escape(meeting.home)}">Kaikki kokousoppaat</a>` : ''}</footer>`;
+    `<footer>Valtuutetun valmistautumisaineisto, koottu tekoälyn avulla: tarkista olennaiset tiedot alkuperäisistä asiakirjoista · Aineisto tarkistettu ${escape(meeting.reviewed)} · ${escape(meeting.stage)}${meeting.home ? ` <a href="${escape(meeting.home)}">Kaikki kokousoppaat</a>` : ''}</footer>`;
 }
 
 function renderNav(){const shown=items.filter(matches);el('agenda').innerHTML=shown.length?shown.map(i=>`<button class="nav-item" data-item="${i.n}" aria-current="${view==='item'&&selected===i.n}"><span class="num">§ ${i.n}</span><span class="navtext">${escape(i.short)}</span>${i.critical?'<span class="dot" aria-hidden="true"></span><span class="sr">, kaipaa tarkennusta</span>':''}</button>`).join(''):'<p class="empty">Ei hakutuloksia.</p>';el('mobile-nav').innerHTML='<option value="">Siirry asiaan…</option>'+shown.map(i=>`<option value="${i.n}" ${view==='item'&&selected===i.n?'selected':''}>§ ${i.n} · ${escape(i.short)}</option>`).join('');}
