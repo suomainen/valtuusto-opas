@@ -45,10 +45,20 @@ Voit kokeilla rakentamista suoraan täytetystä esimerkistä komennolla `python 
 - `details` on valinnainen lista taitettavia erittelyjä. Kukin osio sisältää `title` ja tarvittaessa `text`, `sources` tai taulukon `headers` ja `rows`.
 - Kaikki `sources`-kentät ovat `[nimi, URL]`-pareja. Käytä suoria https-osoitteita, kun sellaisia on. Lisää sivunumero linkin nimeen, vaikka PDF:n sivuankkuri ei toimisi kaikissa selaimissa.
 
+## Saavutettavuus
+
+Opas noudattaa WCAG 2.1 AA -tasoa (laki 306/2019). HTML-pohja hoitaa rakenteen: ohituslinkki sisältöön, otsikkotasot h1 → h2 → h3 → h4 ilman hyppyjä, sarake- ja riviotsikot taulukoissa, näppäimistöllä toimivat välilehdet, ruudunlukijalle ilmoitettavat hakutulokset ja ilmoitukset, uuteen välilehteen avautuvien linkkien maininta, näkymäkohtainen sivun otsikko sekä liikkeen vähentäminen käyttäjän asetuksen mukaan. Sisältöä kirjoittaessa:
+
+- Kirjoita pykälien otsikot, nostot ja linkkien nimet niin, että ne ymmärtää ilman ympäröivää tekstiä. Älä käytä linkin nimenä pelkkää ”tästä” tai ”linkki”.
+- Taulukon ensimmäinen sarake on riviotsikko. Laita siihen mittarin tai erän nimi, ei lukua.
+- Älä välitä tietoa pelkällä värillä, symbolilla tai lyhenteellä. Avaa lyhenteet (esim. TA, EN) tekstissä vähintään kerran.
+- Kun muutat HTML-pohjaa, tarkista näppäimistökäyttö (Tab, nuolinäppäimet välilehdillä), tekstin kontrasti vähintään 4,5:1 ja 320 px leveä näkymä ilman vaakavieritystä. Automaattisen tarkistuksen voi tehdä esimerkiksi axe-työkalulla.
+
 ## Tarkista ennen jakamista
 
 - Vertaa pykäläluetteloa ja liitteitä viralliseen esityslistaan. Tarkista, että jokaisen luvun vuosi, vertailupohja ja lähde näkyvät ja että puuttuvat tiedot on merkitty.
 - Avaa HTML selaimessa. Tarkista tilannekuva, pykälänäkymä, nousseet kysymykset ja tarkennukset. Kokeile hakua, pykälien välillä liikkumista, lähdelinkkejä ja puhelinnäkymää.
+- Kokeile oppaan käyttöä pelkällä näppäimistöllä ja 320 px leveällä näkymällä.
 - Avaa sama HTML ilman verkkoyhteyttä. Oppaan sisällön ja toimintojen pitää avautua tiedostosta. Jaa lukijalle valmis HTML-tiedosto.
 
 ## Kokonaiset tiedostot
@@ -388,12 +398,26 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 @media(max-width:650px){body{border-top-width:10px}header{padding:12px 8px 0}.topline{min-height:190px;padding:25px 18px 52px;border-radius:16px 16px 0 0}.topline .eyebrow{font-size:11px;letter-spacing:.6px}.topline .sub{font-size:13px}h1{font-size:30px}.tabs{margin:10px 10px 5px;gap:6px}.tab{font-size:12px;padding:7px 10px;min-height:42px}.sidebar{padding-top:16px}.content{padding-top:23px}}
 @media print{body{border:0}header{padding:0}.topline{min-height:0;padding:0;border-radius:0;background:none;color:black}.topline::after{display:none}.topline .sub,.topline .eyebrow{color:black}h1{font-size:24pt}.table-scroll{overflow:visible}th{background:#eee}.stat{background:white}.btn{display:none}}
 
+
+/* Saavutettavuus (WCAG 2.1 AA) */
+.sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.skip{position:absolute;left:12px;top:-60px;z-index:10;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+#panel:focus{outline:none}#panel:focus-visible{outline:3px solid var(--brand);outline-offset:6px}
+h3.block-label{margin:0 0 12px}
+h4{font-size:17px;line-height:1.4;margin:22px 0 8px;color:var(--navy);font-weight:600}
+.table-scroll:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+tbody th{font:inherit;color:inherit;letter-spacing:0;text-align:left}
+.toast:empty{display:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.priority:hover{transform:none}}
+@media print{.skip,.sr{display:none!important}}
 </style>
 </head>
 <body>
+<a class="skip" href="#panel">Siirry sisältöön</a>
 <header><div class="topline"><div><div class="eyebrow" id="guide-city"></div><h1 id="guide-date"></h1><div class="sub" id="guide-meta"></div></div><button class="btn print" id="print">Tulosta näkymä</button></div>
-<div class="tabs" role="tablist" aria-label="Kokousoppaan näkymät"><button class="tab" id="tab-overview" role="tab" aria-controls="panel" aria-selected="true" data-view="overview">Tilannekuva</button><button class="tab" id="tab-item" role="tab" aria-controls="panel" aria-selected="false" data-view="item">Asiat</button><button class="tab" id="tab-questions" role="tab" aria-controls="panel" aria-selected="false" data-view="questions">Nousseet kysymykset</button><button class="tab" id="tab-sources" role="tab" aria-controls="panel" aria-selected="false" data-view="sources">Tarkennukset ja lähteet</button></div></header>
-<div class="layout"><aside class="sidebar" aria-label="Esityslistan asiat"><div class="eyebrow nav-caption">Esityslista</div><label for="search" class="sr-only" style="position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden">Hae asioista</label><input class="search" id="search" type="search" placeholder="Hae asiaa tai teemaa…" autocomplete="off"><select id="mobile-nav" class="mobile-select" aria-label="Valitse esityslistan asia"><option value="">Siirry asiaan…</option></select><nav id="agenda"></nav><div class="small" style="margin-top:20px">Punainen piste merkitsee asiaa, joka kaipaa tarkennusta.</div></aside><main class="content" id="panel" role="tabpanel" aria-labelledby="tab-overview" tabindex="-1"></main></div><div class="toast" id="toast" role="status" hidden></div>
+<div class="tabs" role="tablist" aria-label="Kokousoppaan näkymät"><button class="tab" id="tab-overview" role="tab" aria-controls="panel" aria-selected="true" data-view="overview">Tilannekuva</button><button class="tab" id="tab-item" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="item">Asiat</button><button class="tab" id="tab-questions" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="questions">Nousseet kysymykset</button><button class="tab" id="tab-sources" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="sources">Tarkennukset ja lähteet</button></div></header>
+<div class="layout"><aside class="sidebar" aria-label="Esityslistan asiat"><div class="eyebrow nav-caption">Esityslista</div><label for="search" class="sr">Hae asioista</label><input class="search" id="search" type="search" placeholder="Hae asiaa tai teemaa…" autocomplete="off"><select id="mobile-nav" class="mobile-select" aria-label="Valitse esityslistan asia"><option value="">Siirry asiaan…</option></select><nav id="agenda"></nav><div class="small" style="margin-top:20px">Punainen piste merkitsee asiaa, joka kaipaa tarkennusta.</div></aside><main class="content" id="sisalto"><div id="panel" role="tabpanel" aria-labelledby="tab-overview" tabindex="-1"></div></main></div><div class="toast" id="toast" aria-hidden="true"></div><div class="sr" id="live" role="status" aria-live="polite"></div>
 <script type="application/json" id="guide-data">__GUIDE_DATA__</script>
 <script>
 (() => {
@@ -404,9 +428,9 @@ let view = 'overview', selected = items[0].n, query = '';
 const el=id=>document.getElementById(id);
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const list=arr=>'<ul>'+arr.map(x=>'<li>'+escape(x)+'</li>').join('')+'</ul>';
-const link=(name,url,cls='source')=>`<a class="${cls}" href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(name)} ↗</a>`;
-const row=(cells,head=false)=>'<tr>'+cells.map(c=>`<${head?'th scope="col"':'td'}>${escape(c)}</${head?'th':'td'}>`).join('')+'</tr>';
-const table=(headers,rows,cls='')=>`<div class="table-scroll"><table class="${cls}"><thead>${row(headers,true)}</thead><tbody>${rows.map(r=>row(r)).join('')}</tbody></table></div>`;
+const link=(name,url,cls='source')=>`<a class="${cls}" href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(name)} <span aria-hidden="true">↗</span><span class="sr"> (avautuu uuteen välilehteen)</span></a>`;
+const row=(cells,head=false)=>'<tr>'+cells.map((c,k)=>{const t=head?'th scope="col"':k===0?'th scope="row"':'td';return `<${t}>${escape(c)}</${t.slice(0,2)}>`;}).join('')+'</tr>';
+const table=(headers,rows,cls='')=>`<div class="table-scroll" tabindex="0" role="region" aria-label="Taulukko: ${escape(headers.join(', '))}"><table class="${cls}"><thead>${row(headers,true)}</thead><tbody>${rows.map(r=>row(r)).join('')}</tbody></table></div>`;
 const matches = item => !query || JSON.stringify(item).toLocaleLowerCase('fi').includes(query);
 const links = entries => (entries || []).map(([label, url]) => link(label, url)).join('');
 el('guide-city').textContent = meeting.city + ' / valtuutetun kokousopas';
@@ -427,14 +451,14 @@ function overview() {
     ${summary.comparisonNote ? `<div class="note"><strong>Vertailulukujen lukutapa</strong><br>${escape(summary.comparisonNote)}</div>` : ''}
     ${highlights.length ? `<section class="section"><h3>Nostot esityslistalta</h3><div class="priority-grid">
       ${highlights.map(({n, title, text}) => `<button class="priority" data-item="${n}">
-        <span class="badge">§ ${n}</span><strong>${escape(title)} →</strong><p>${escape(text)}</p></button>`).join('')}</div></section>` : ''}
-    ${issues.length ? '<div class="note warn"><strong>Päätöksentekoa tukevat tarkennukset</strong><br><button class="jump" data-view="sources">Avaa tarkennuskohdat →</button></div>' : ''}
+        <span class="badge">§ ${n}</span><strong>${escape(title)} <span aria-hidden="true">→</span></strong><p>${escape(text)}</p></button>`).join('')}</div></section>` : ''}
+    ${issues.length ? '<div class="note warn"><strong>Päätöksentekoa tukevat tarkennukset</strong><br><button class="jump" data-view="sources">Avaa tarkennuskohdat <span aria-hidden="true">→</span></button></div>' : ''}
     <section class="section"><h3>Tarkistettu aineisto</h3><p class="small">${escape(meeting.coverage)}</p></section>`;
 }
 
 function comparison(item) {
   const {note, headers, rows = [], sources} = item.comparison;
-  return `<section class="block comparison"><div class="block-label">Nykytilanne → esitys</div>
+  return `<section class="block comparison"><h3 class="block-label">Nykytilanne → esitys</h3>
     <p class="small">${escape(note)}</p>
     ${rows.length ? table(headers || ['Mittari','Nyt / vertailupohja','Esitys / seuraava tilanne','Muutos'], rows) : ''}
     <div class="sources" style="margin-top:13px">${links(sources || [['Asian esittely', item.url]])}</div></section>`;
@@ -448,7 +472,7 @@ function extras(item) {
   const attachments = (item.attachments || []).map(({title, status, summary, url}) => `<details>
     <summary>${escape(title)} · ${escape(status)}</summary><p>${escape(summary)}</p>
     ${url ? link('Avaa liite', url) : ''}</details>`).join('');
-  return details + (attachments ? '<h3 class="section">Liitteet</h3>' + attachments : '');
+  return details + (attachments ? '<h4 class="section">Liitteet</h4>' + attachments : '');
 }
 
 function item() {
@@ -460,17 +484,17 @@ function item() {
     </div><h2>${escape(current.title)}</h2></div></div>
     <div class="legend"><span><b>Todettu</b> = asiakirjan tieto</span><span><b>Arvio</b> = oma johtopäätös</span></div>
     ${comparison(current)}
-    <section class="block"><div class="block-label">01 / Todettu ja päätösehdotus</div>${list(current.facts)}${extras(current)}</section>
-    <section class="block"><div class="block-label assess">02 / Oma tilannearvio</div><p>${escape(current.assessment)}</p></section>
-    ${current.risks.length ? `<section class="block"><div class="block-label risks">03 / Huomioitavaa ja avoimia kohtia</div>${list(current.risks)}</section>` : ''}
-    <section class="block"><div class="block-label">04 / Nousseet kysymykset</div>
+    <section class="block"><h3 class="block-label">01 / Todettu ja päätösehdotus</h3>${list(current.facts)}${extras(current)}</section>
+    <section class="block"><h3 class="block-label assess">02 / Oma tilannearvio</h3><p>${escape(current.assessment)}</p></section>
+    ${current.risks.length ? `<section class="block"><h3 class="block-label risks">03 / Huomioitavaa ja avoimia kohtia</h3>${list(current.risks)}</section>` : ''}
+    <section class="block"><h3 class="block-label">04 / Nousseet kysymykset</h3>
       ${current.questions.length ? questionsFor(current) : '<p class="small">Ei avoimia kysymyksiä.</p>'}</section>
     <section class="block"><h3>Alkuperäiset lähteet</h3><div class="sources">
       ${link('Asian asiakirja', current.url)}${links(current.sources)}</div></section>
     <div class="pager">
-      <button class="btn" ${previous ? `data-item="${previous.n}"` : 'disabled'}>← Edellinen</button>
+      <button class="btn" ${previous ? `data-item="${previous.n}"` : 'disabled'}><span aria-hidden="true">←</span> Edellinen</button>
       <span class="small">${index + 1} / ${items.length}</span>
-      <button class="btn" ${next ? `data-item="${next.n}"` : 'disabled'}>Seuraava →</button>
+      <button class="btn" ${next ? `data-item="${next.n}"` : 'disabled'}>Seuraava <span aria-hidden="true">→</span></button>
     </div>`;
 }
 
@@ -482,7 +506,7 @@ function sources() {
     ${issues.length ? `<div class="q-toolbar"><span class="small">${issues.length} tarkennuskohtaa</span>
     <button class="btn" id="copy-issues">Kopioi tarkistuslista</button></div>
     ${issues.map(({n, type, title, text}) => `<div class="issue"><span class="badge warn">${escape(type)}</span>
-    <strong>§ ${n} · ${escape(title)}</strong><p>${escape(text)}</p><button class="jump" data-item="${n}">Avaa asia →</button></div>`).join('')}`
+    <strong>§ ${n} · ${escape(title)}</strong><p>${escape(text)}</p><button class="jump" data-item="${n}">Avaa asia <span aria-hidden="true">→</span></button></div>`).join('')}`
     : '<p>Ei erillisiä tarkennuskohtia.</p>'}
     ${attachments.length ? `<section class="section"><h3>Liitteet ja niiden saatavuus</h3><ul>
       ${attachments.map(({title, url, status}) => `<li>${url ? link(title, url, '') : escape(title)}
@@ -494,20 +518,26 @@ function sources() {
 function render() {
   renderNav();
   document.querySelectorAll('.tab').forEach(tab => tab.setAttribute('aria-selected', tab.dataset.view === view));
+  document.querySelectorAll('.tab').forEach(tab => tab.tabIndex = tab.dataset.view === view ? 0 : -1);
+  setTitle();
   el('panel').setAttribute('aria-labelledby', 'tab-' + view);
   el('panel').innerHTML = ({overview, item, questions, sources})[view]() +
     `<footer>Valtuutetun valmistautumisaineisto · Aineisto tarkistettu ${escape(meeting.reviewed)} · ${escape(meeting.stage)}</footer>`;
 }
 
-function renderNav(){const shown=items.filter(matches);el('agenda').innerHTML=shown.length?shown.map(i=>`<button class="nav-item" data-item="${i.n}" aria-current="${view==='item'&&selected===i.n}"><span class="num">§ ${i.n}</span><span class="navtext">${escape(i.short)}</span>${i.critical?'<span class="dot" aria-label="Kaipaa tarkennusta"></span>':''}</button>`).join(''):'<p class="empty">Ei hakutuloksia.</p>';el('mobile-nav').innerHTML='<option value="">Siirry asiaan…</option>'+shown.map(i=>`<option value="${i.n}" ${view==='item'&&selected===i.n?'selected':''}>§ ${i.n} · ${escape(i.short)}</option>`).join('');}
+function renderNav(){const shown=items.filter(matches);el('agenda').innerHTML=shown.length?shown.map(i=>`<button class="nav-item" data-item="${i.n}" aria-current="${view==='item'&&selected===i.n}"><span class="num">§ ${i.n}</span><span class="navtext">${escape(i.short)}</span>${i.critical?'<span class="dot" aria-hidden="true"></span><span class="sr">, kaipaa tarkennusta</span>':''}</button>`).join(''):'<p class="empty">Ei hakutuloksia.</p>';el('mobile-nav').innerHTML='<option value="">Siirry asiaan…</option>'+shown.map(i=>`<option value="${i.n}" ${view==='item'&&selected===i.n?'selected':''}>§ ${i.n} · ${escape(i.short)}</option>`).join('');}
 function questionsFor(i){return '<ul class="q-list">'+i.questions.map((q,k)=>{let id=i.n+'-'+k;return `<li><label><input type="checkbox" data-question="${id}" ${checked.has(id)?'checked':''}><span>${escape(q)}</span></label></li>`;}).join('')+'</ul>';}
-function questions(){const found=items.filter(matches);const total=items.reduce((s,i)=>s+i.questions.length,0);return `<div class="eyebrow">Oma kokouslista</div><h2 style="margin-top:10px">Nousseet kysymykset</h2><p class="sub">Merkitse käsitelty kysymys rastilla. Merkinnät säilyvät tämän sivuistunnon aikana. Haku rajaa asioita myös tässä näkymässä.</p><div class="q-toolbar"><span class="small" id="qcount">${checked.size} / ${total} kysymystä käsitelty</span><button class="btn" id="reset-questions">Tyhjennä rastit</button></div>${found.map(i=>`<details ${i.critical?'open':''}><summary>§ ${i.n} · ${escape(i.short)} <span class="small">(${i.questions.length})</span></summary>${questionsFor(i)}<button class="jump" data-item="${i.n}">Lue asian tausta →</button></details>`).join('')||'<p class="empty">Ei hakutuloksia.</p>'}`;}
+function questions(){const found=items.filter(matches);const total=items.reduce((s,i)=>s+i.questions.length,0);return `<div class="eyebrow">Oma kokouslista</div><h2 style="margin-top:10px">Nousseet kysymykset</h2><p class="sub">Merkitse käsitelty kysymys rastilla. Merkinnät säilyvät tämän sivuistunnon aikana. Haku rajaa asioita myös tässä näkymässä.</p><div class="q-toolbar"><span class="small" id="qcount">${checked.size} / ${total} kysymystä käsitelty</span><button class="btn" id="reset-questions">Tyhjennä rastit</button></div>${found.map(i=>`<details ${i.critical?'open':''}><summary>§ ${i.n} · ${escape(i.short)} <span class="small">(${i.questions.length})</span></summary>${questionsFor(i)}<button class="jump" data-item="${i.n}">Lue asian tausta <span aria-hidden="true">→</span></button></details>`).join('')||'<p class="empty">Ei hakutuloksia.</p>'}`;}
 function navigate(v,n){view=v;if(n)selected=Number(n);render();if(v==='item')history.replaceState(null,'','#asia-'+selected);else history.replaceState(null,'','#'+v);window.scrollTo({top:0,behavior:'instant'});el('panel').focus({preventScroll:true});}
 document.addEventListener('click',async e=>{const itemButton=e.target.closest('[data-item]');if(itemButton){navigate('item',itemButton.dataset.item);return;}const viewButton=e.target.closest('[data-view]');if(viewButton){navigate(viewButton.dataset.view);return;}if(e.target.id==='print'){document.querySelectorAll('#panel details').forEach(d=>d.open=true);window.print();}if(e.target.id==='reset-questions'){checked.clear();render();}if(e.target.id==='copy-issues'){const text=issues.map(i=>`§ ${i.n} — ${i.title}\n${i.text}`).join('\n\n');try{await navigator.clipboard.writeText(text);notify('Tarkistuslista kopioitu.');}catch{const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.append(ta);ta.select();const ok=document.execCommand('copy');ta.remove();notify(ok?'Tarkistuslista kopioitu.':'Kopiointi ei onnistunut tässä selaimessa.');}}});
 document.addEventListener('change',e=>{if(e.target.dataset.question){const id=e.target.dataset.question;e.target.checked?checked.add(id):checked.delete(id);document.querySelectorAll(`[data-question="${id}"]`).forEach(x=>x.checked=e.target.checked);if(el('qcount'))el('qcount').textContent=checked.size+' / '+items.reduce((s,i)=>s+i.questions.length,0)+' kysymystä käsitelty';}});
-el('search').addEventListener('input',e=>{query=e.target.value.trim().toLocaleLowerCase('fi');if(query&&view!=='questions')view='questions';render();});el('mobile-nav').addEventListener('change',e=>{if(e.target.value)navigate('item',e.target.value);});
+el('search').addEventListener('input',e=>{query=e.target.value.trim().toLocaleLowerCase('fi');if(query&&view!=='questions')view='questions';render();announce(query?items.filter(matches).length+' asiaa vastaa hakua':'Haku tyhjennetty, kaikki asiat näkyvissä');});el('mobile-nav').addEventListener('change',e=>{if(e.target.value)navigate('item',e.target.value);});
 document.querySelector('[role=tablist]').addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;const tabs=[...document.querySelectorAll('.tab')];let k=tabs.indexOf(document.activeElement);if(k<0)return;e.preventDefault();k=e.key==='Home'?0:e.key==='End'?tabs.length-1:(k+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;tabs[k].focus();navigate(tabs[k].dataset.view);tabs[k].focus();});
-function notify(t){el('toast').textContent=t;el('toast').hidden=false;setTimeout(()=>el('toast').hidden=true,2500);}
+
+const baseTitle=document.title;
+function setTitle(){const cur=items.find(x=>x.n===selected);const names={overview:'Tilannekuva',questions:'Nousseet kysymykset',sources:'Tarkennukset ja lähteet'};document.title=(view==='item'&&cur?'§ '+cur.n+' '+cur.title:names[view])+' · '+baseTitle;}
+function announce(t){el('live').textContent='';setTimeout(()=>el('live').textContent=t,50);}
+function notify(t){el('toast').textContent=t;announce(t);setTimeout(()=>el('toast').textContent='',2500);}
 
 const hash = location.hash.slice(1);
 const requestedItem = items.find(item => hash === 'asia-' + item.n);

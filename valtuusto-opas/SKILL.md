@@ -30,6 +30,15 @@ Lue [JSON-ohje](references/tietorakenne.md) ja käytä mukana olevia työkaluja.
 
 Tarkista, että listatut pykälät ja liitteet vastaavat aineistoa ja uudet tiedot näkyvät tilannekuvassa, pykälänäkymässä, kysymyksissä ja lähteissä. Kokeile pykälähakua, linkkejä ja puhelinnäkymää, kun selain on käytettävissä. Varmista, ettei tiedosto lataa tyylejä, kirjasimia, ohjelmakoodia, kuvia tai dataa verkosta. Kerro mahdollisista aineiston katveista ja anna linkki valmiiseen HTML-tiedostoon.
 
+## Saavutettavuus
+
+Opas noudattaa WCAG 2.1 AA -tasoa (laki 306/2019). HTML-pohja hoitaa rakenteen: ohituslinkki sisältöön, otsikkotasot h1 → h2 → h3 → h4 ilman hyppyjä, sarake- ja riviotsikot taulukoissa, näppäimistöllä toimivat välilehdet, ruudunlukijalle ilmoitettavat hakutulokset ja ilmoitukset, uuteen välilehteen avautuvien linkkien maininta, näkymäkohtainen sivun otsikko sekä liikkeen vähentäminen käyttäjän asetuksen mukaan. Sisältöä kirjoittaessa:
+
+- Kirjoita pykälien otsikot, nostot ja linkkien nimet niin, että ne ymmärtää ilman ympäröivää tekstiä. Älä käytä linkin nimenä pelkkää ”tästä” tai ”linkki”.
+- Taulukon ensimmäinen sarake on riviotsikko. Laita siihen mittarin tai erän nimi, ei lukua.
+- Älä välitä tietoa pelkällä värillä, symbolilla tai lyhenteellä. Avaa lyhenteet (esim. TA, EN) tekstissä vähintään kerran.
+- Kun muutat HTML-pohjaa, tarkista näppäimistökäyttö (Tab, nuolinäppäimet välilehdillä), tekstin kontrasti vähintään 4,5:1 ja 320 px leveä näkymä ilman vaakavieritystä. Automaattisen tarkistuksen voi tehdä esimerkiksi axe-työkalulla.
+
 ## Käyttöönotto ja jakaminen
 
 Jaa koko `valtuusto-opas`-kansio. Kun kansio on omassa Codexin `.codex/skills`-hakemistossa, aloita uusi keskustelu ja käytä pyyntöä: ”$valtuusto-opas Tee Paimion seuraavan valtuuston kokousopas tästä esityslistasta” ja lisää esityslistan linkki. Valmiin oppaan lukijalle riittää pelkkä HTML-tiedosto.

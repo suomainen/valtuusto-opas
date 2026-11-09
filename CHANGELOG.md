@@ -2,6 +2,12 @@
 
 Versionumero on muotoa **pää.osa.korjaus**: pää = sivuston tai oppaan rakenteen kokonaan uusi versio, osa = uusi kokousopas tai ominaisuus, korjaus = pieni korjaus tai tarkennus. Uusin versio ensin.
 
+## 1.1.0
+
+- Saavutettavuus (WCAG 2.1 AA) oppaaseen 11.11.2026 ja HTML-pohjaan: ohituslinkki sisältöön, main-alue, otsikkotasot ilman hyppyjä (lohko-otsikot h3, alaosiot h4), taulukoiden riviotsikot, näppäimistöllä vieritettävät taulukot, välilehtien tabulaattorijärjestys, näkymäkohtainen sivun otsikko, hakutulosten ja ilmoitusten ruudunlukijailmoitus, uuteen välilehteen avautuvien linkkien maininta, koristesymbolit piilotettu ruudunlukijalta ja liikkeen vähentäminen.
+- Etusivulle saavutettavuusosio ja palauteosoite.
+- Skill-ohjeeseen ja rakennusohjeeseen saavutettavuusohjeet; rakennusohjeen HTML-pohja päivitetty.
+
 ## 1.0.0
 
 - Ensimmäinen julkaisu GitHub Pagesissa.

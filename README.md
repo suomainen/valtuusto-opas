@@ -60,6 +60,14 @@ Kun opas on valmis:
 
 Skillin voi ottaa käyttöön Codexissa kopioimalla `valtuusto-opas`-kansion hakemistoon `.codex/skills`, tai jakaa yhtenä tiedostona `rakennusohje.md`.
 
+## Saavutettavuus
+
+Oppaat noudattavat WCAG 2.1 AA -tasoa. Saavutettavuusratkaisut ovat HTML-pohjassa `valtuusto-opas/assets/opas.html`, joten ne tulevat jokaiseen uuteen oppaaseen. Ohjeet sisällön kirjoittamiseen ovat tiedostossa [valtuusto-opas/SKILL.md](valtuusto-opas/SKILL.md). Muutosten jälkeen tarkistetaan vähintään:
+
+- automaattinen tarkistus (esim. axe) kaikissa neljässä näkymässä sekä 1280 px ja 375 px leveydellä
+- käyttö pelkällä näppäimistöllä: ohituslinkki, välilehdet nuolinäppäimillä, haku, kysymysten rastit
+- 320 px leveä näkymä ilman vaakavieritystä ja tekstin kontrasti vähintään 4,5:1
+
 ## Muokkaaminen
 
 - **Etusivun tekstit ja oppaiden luettelo:** `index.html`.
