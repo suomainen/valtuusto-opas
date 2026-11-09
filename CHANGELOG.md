@@ -2,6 +2,10 @@
 
 Versionumero on muotoa **pää.osa.korjaus**: pää = sivuston tai oppaan rakenteen kokonaan uusi versio, osa = uusi kokousopas tai ominaisuus, korjaus = pieni korjaus tai tarkennus. Uusin versio ensin.
 
+## 1.6.0
+
+- Oppaaseen 11.11.2026 uusi välilehti ”Asukas ja talous”: valtionosuudet talousarviossa (TA2026 → TA2027), valtionosuuden laskentatapa ja muutos ikäryhmittäin (perushinnat 2026, omarahoitusosuus 1 548,79 €/asukas), uuden asukkaan vaikutus ikäryhmittäin sekä laskuri esimerkkitaloudelle. Luvut ovat suuntaa antavia ja lähteistettyjä.
+
 ## 1.5.0
 
 - Oppaan 11.11.2026 kaikkiin 48 kysymykseen haettu verkosta mahdollinen vastaus (”Mitä löytyi”): tila (vastaus löytyi / osittainen / ei löytynyt), tiivistelmä ja lähteet. Vastaukset näkyvät asiakohdissa ja Nousseet kysymykset -näkymässä.
