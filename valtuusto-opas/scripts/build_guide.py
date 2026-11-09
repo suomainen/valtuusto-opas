@@ -81,6 +81,39 @@ def validate(data):
             if attachment.get("url"):
                 require_url(attachment["url"])
 
+    investments = data.get("investments")
+    if investments:
+        validate_investments(investments)
+
+
+def validate_investments(inv):
+    require_text(inv, "title", "lead", "note")
+    years = inv["years"]
+    if not years or any(not isinstance(year, str) for year in years):
+        raise ValueError("investments.years on lista vuosien otsikoita.")
+    summary = inv["summary"]
+    require_text(summary, "title", "note")
+    validate_table({"headers": summary["headers"], "rows": summary["rows"] + summary.get("totals", [])})
+    validate_links(summary)
+    for group in inv["groups"]:
+        require_text(group, "title")
+        if len(group["total"]) != len(years) or any(len(row) != len(years) + 2 for row in group["rows"]):
+            raise ValueError(f"Investointiryhmän sarakkeet eivät vastaa vuosia: {group['title']}")
+        for k, year in enumerate(years):
+            total = sum(row[k + 2] or 0 for row in group["rows"])
+            if total != group["total"][k]:
+                raise ValueError(f"Investointiryhmän {group['title']} hankkeiden summa {year} on {total}, välisumma {group['total'][k]}.")
+    outside = inv.get("outside")
+    if outside:
+        require_text(outside, "title", "note")
+        for table in outside["tables"]:
+            if sum(row[1] for row in table["rows"]) != table["total"]:
+                raise ValueError(f"Taulukon {table['title']} rivien summa ei vastaa yhteissummaa.")
+    for key in ("risks", "questions"):
+        if any(not isinstance(value, str) for value in inv.get(key, [])):
+            raise ValueError(f"investments.{key} on tekstilista.")
+    validate_links(inv)
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

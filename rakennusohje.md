@@ -32,6 +32,7 @@ Voit kokeilla rakentamista suoraan täytetystä esimerkistä komennolla `python 
 
 - Kerro jokaisesta pykälästä, mitä valtuustolle esitetään ja missä vaiheessa asia on. Pidä asiakirjoissa todetut tiedot ja oma tilannearvio erillään. Arvioi talous, oikeudelliset vaikutukset, toimeenpano, riskit ja avoimet kohdat, kun ne ovat asian kannalta olennaisia. Yksilöi ristiriidat, niiden lähteet ja vaikutus päätökseen.
 - Lisää jokaiselle päätöksenteossa olennaiselle luvulle nykyinen arvo tai paras vertailukelpoinen lähtöluku, ehdotettu arvo ja muutos. Merkitse vuosi, jakso, yksikkö ja tiedon laji (voimassa oleva vero tai maksu, alkuperäinen tai muutettu talousarvio, ennuste, toteuma). Hae vertailu tarvittaessa aiemmasta hyväksytystä päätöksestä, talousarviosta tai tilinpäätöksestä. Käytä samaa ajanjaksoa ja rajausta. Ilmaise veroprosenttien erot prosenttiyksikköinä. Näytä euromääräiset kertymät eri riveillä. Merkitse omat laskelmat ja selitä vertailukelpoisuutta rajoittavat erot.
+- Kun käsitellään talousarviota, kokoa investointiosa omaksi Investoinnit-näkymäksi (`investments`): yhteenveto toimielimittäin, hankkeet vuosittain koko suunnittelukaudelta ja suunnittelukauden ulkopuolelle jäävät hankkeet. Jos tekstiotteen tyhjät vuosisarakkeet ovat sulautuneet, päättele vuodet välisummista ja varmista, että jokainen ryhmä täsmää. Kirjaa välisummien ja yhteenvedon ristiriidat huomioihin.
 - Jos lähtöluku puuttuu, kerro mistä sitä etsittiin ja mitä tästä seuraa. Älä päättele puuttuvaa kokonaismäärää ilmoitetusta vähennyksestä. Jos pykälässä ei ole vertailtavaa päätöslukua, riittää lyhyt perustelu. Avaa suurten talousasioiden erittelyt tarvittaessa taitettaviin osioihin.
 - Kirjoita suomeksi neutraalisti ja konkreettisesti. Käytä esimerkiksi otsikoita **04 / Nousseet kysymykset**, **Huomioitavaa ja avoimia kohtia**, **Tarkennukset ja lähteet**. Muotoile kysymykset niin, että niihin voi vastata luvulla, asiakirjalla, vastuulla, päätösvaiheella tai määräajalla.
 
@@ -42,6 +43,7 @@ Voit kokeilla rakentamista suoraan täytetystä esimerkistä komennolla `python 
 - Jokaisella pykälällä on `facts`, `risks` ja `questions` tekstilistoina. Tyhjä lista sopii, jos riskiä tai kysymystä ei noussut. `critical` on valinnainen huomion merkki. `sources` sisältää pykälän muut lähteet.
 - Jokaisella pykälällä on `comparison.note`. Jos vertailtavaa lukua ei ole, selitä syy siinä. `rows` voi silloin puuttua. Oletuksena jokainen rivi sisältää neljä solua. `headers` voi korvata oletusotsikot esimerkiksi toteumavertailussa.
 - `attachments` listaa liitteet ja alaliitteet. Käytä kuvaavaa tilaa, esimerkiksi **Luettu**, **Osin peitetty**, **Linkki puuttuu** tai **Linkitetty, jäi lukematta**. Jätä `url` pois vain, kun osoitetta ei ole. Kerro olennainen liitteen sisältö tai saatavuuden syy kentässä `summary`.
+- `investments` on valinnainen. Kun se on annettu, oppaaseen tulee Investoinnit-välilehti. Kentät: `title`, `lead`, `note`, valinnaiset `eyebrow`, `focusYear` (esim. `"TA2027"`) ja `stats`; `years` (sarakeotsikot, esim. `["TA2026","TA2027","2028",…]`); `summary` (`title`, `note`, `headers`, `rows`, `totals`, `sources`); `groups` (kukin `title`, `page`, `total` vuosittain, valinnainen `income` ja `rows` muodossa `[hanke, laji, arvo vuosittain…]`, tyhjä vuosi `null`); `outside` (`title`, `note`, `tables`: `title`, `rows` `[hanke, arvio]`, `total`; sekä `total`); `risks`, `questions` ja `sources`. Luvut ovat tuhansia euroja. `build_guide.py` tarkistaa, että hankkeiden summat täsmäävät välisummiin.
 - `details` on valinnainen lista taitettavia erittelyjä. Kukin osio sisältää `title` ja tarvittaessa `text`, `sources` tai taulukon `headers` ja `rows`.
 - Kaikki `sources`-kentät ovat `[nimi, URL]`-pareja. Käytä suoria https-osoitteita, kun sellaisia on. Lisää sivunumero linkin nimeen, vaikka PDF:n sivuankkuri ei toimisi kaikissa selaimissa.
 
@@ -311,6 +313,39 @@ def validate(data):
             if attachment.get("url"):
                 require_url(attachment["url"])
 
+    investments = data.get("investments")
+    if investments:
+        validate_investments(investments)
+
+
+def validate_investments(inv):
+    require_text(inv, "title", "lead", "note")
+    years = inv["years"]
+    if not years or any(not isinstance(year, str) for year in years):
+        raise ValueError("investments.years on lista vuosien otsikoita.")
+    summary = inv["summary"]
+    require_text(summary, "title", "note")
+    validate_table({"headers": summary["headers"], "rows": summary["rows"] + summary.get("totals", [])})
+    validate_links(summary)
+    for group in inv["groups"]:
+        require_text(group, "title")
+        if len(group["total"]) != len(years) or any(len(row) != len(years) + 2 for row in group["rows"]):
+            raise ValueError(f"Investointiryhmän sarakkeet eivät vastaa vuosia: {group['title']}")
+        for k, year in enumerate(years):
+            total = sum(row[k + 2] or 0 for row in group["rows"])
+            if total != group["total"][k]:
+                raise ValueError(f"Investointiryhmän {group['title']} hankkeiden summa {year} on {total}, välisumma {group['total'][k]}.")
+    outside = inv.get("outside")
+    if outside:
+        require_text(outside, "title", "note")
+        for table in outside["tables"]:
+            if sum(row[1] for row in table["rows"]) != table["total"]:
+                raise ValueError(f"Taulukon {table['title']} rivien summa ei vastaa yhteissummaa.")
+    for key in ("risks", "questions"):
+        if any(not isinstance(value, str) for value in inv.get(key, [])):
+            raise ValueError(f"investments.{key} on tekstilista.")
+    validate_links(inv)
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -412,19 +447,20 @@ tbody th{font:inherit;color:inherit;letter-spacing:0;text-align:left}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.priority:hover{transform:none}}
 .home{display:inline-flex;gap:6px;align-items:center;color:#fff;font-size:14px;margin-bottom:12px;text-underline-offset:3px}.home:hover{text-decoration-thickness:2px}.home:focus-visible{outline-color:var(--yellow)}
 .ai-note{border-left:5px solid var(--blue);padding:4px 0 4px 22px;margin:26px 0;max-width:820px}.ai-note h3{margin:0 0 8px}.ai-note p{margin:0 0 10px}.ai-note p:last-child{margin-bottom:0}
+.inv td.kind{text-align:left;white-space:nowrap;color:var(--soft)}.inv tfoot th,.inv tfoot td{font-weight:650;border-top:2px solid var(--line);border-bottom:0}.inv th[scope=row]{min-width:220px}.inv tfoot th{font-size:inherit;color:inherit;letter-spacing:0}.inv.with-kind thead th:nth-child(2){text-align:left}
 @media print{.skip,.sr,.home{display:none!important}}
 </style>
 </head>
 <body>
 <a class="skip" href="#panel">Siirry sisältöön</a>
 <header><div class="topline"><div><a class="home" id="guide-home" hidden><span aria-hidden="true">←</span> Kaikki kokousoppaat</a><div class="eyebrow" id="guide-city"></div><h1 id="guide-date"></h1><div class="sub" id="guide-meta"></div></div><button class="btn print" id="print">Tulosta näkymä</button></div>
-<div class="tabs" role="tablist" aria-label="Kokousoppaan näkymät"><button class="tab" id="tab-overview" role="tab" aria-controls="panel" aria-selected="true" data-view="overview">Tilannekuva</button><button class="tab" id="tab-item" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="item">Asiat</button><button class="tab" id="tab-questions" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="questions">Nousseet kysymykset</button><button class="tab" id="tab-sources" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="sources">Tarkennukset ja lähteet</button></div></header>
+<div class="tabs" role="tablist" aria-label="Kokousoppaan näkymät"><button class="tab" id="tab-overview" role="tab" aria-controls="panel" aria-selected="true" data-view="overview">Tilannekuva</button><button class="tab" id="tab-item" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="item">Asiat</button><button class="tab" id="tab-investments" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="investments" hidden>Investoinnit</button><button class="tab" id="tab-questions" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="questions">Nousseet kysymykset</button><button class="tab" id="tab-sources" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="sources">Tarkennukset ja lähteet</button></div></header>
 <div class="layout"><aside class="sidebar" aria-label="Esityslistan asiat"><div class="eyebrow nav-caption">Esityslista</div><label for="search" class="sr">Hae asioista</label><input class="search" id="search" type="search" placeholder="Hae asiaa tai teemaa…" autocomplete="off"><select id="mobile-nav" class="mobile-select" aria-label="Valitse esityslistan asia"><option value="">Siirry asiaan…</option></select><nav id="agenda"></nav><div class="small" style="margin-top:20px">Punainen piste merkitsee asiaa, joka kaipaa tarkennusta.</div></aside><main class="content" id="sisalto"><div id="panel" role="tabpanel" aria-labelledby="tab-overview" tabindex="-1"></div></main></div><div class="toast" id="toast" aria-hidden="true"></div><div class="sr" id="live" role="status" aria-live="polite"></div>
 <script type="application/json" id="guide-data">__GUIDE_DATA__</script>
 <script>
 (() => {
 'use strict';
-const {meeting, overview: summary, items, issues = []} = JSON.parse(document.getElementById('guide-data').textContent);
+const {meeting, overview: summary, items, issues = [], investments: INV = null} = JSON.parse(document.getElementById('guide-data').textContent);
 const checked = new Set();
 let view = 'overview', selected = items[0].n, query = '';
 const el=id=>document.getElementById(id);
@@ -525,10 +561,27 @@ function render() {
   document.querySelectorAll('.tab').forEach(tab => tab.tabIndex = tab.dataset.view === view ? 0 : -1);
   setTitle();
   el('panel').setAttribute('aria-labelledby', 'tab-' + view);
-  el('panel').innerHTML = ({overview, item, questions, sources})[view]() +
+  el('panel').innerHTML = ({overview, item, investments, questions, sources})[view]() +
     `<footer>Valtuutetun valmistautumisaineisto, koottu tekoälyn avulla: tarkista olennaiset tiedot alkuperäisistä asiakirjoista · Aineisto tarkistettu ${escape(meeting.reviewed)} · ${escape(meeting.stage)}${meeting.home ? ` <a href="${escape(meeting.home)}">Kaikki kokousoppaat</a>` : ''}</footer>`;
 }
 
+const invNum=v=>v===null||v===undefined?'<span aria-hidden="true">–</span><span class="sr">ei määrärahaa</span>':escape(new Intl.NumberFormat('fi-FI').format(v).replace('-','−'));
+const invTable=(headers,rows,foot=[],label='')=>`<div class="table-scroll" tabindex="0" role="region" aria-label="${escape(label||headers.join(', '))}"><table class="financial inv${headers[1]==='Laji'?' with-kind':''}"><thead><tr>${headers.map(h=>`<th scope="col">${escape(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr><th scope="row">${escape(r[0])}</th>${r.slice(1).map(c=>typeof c==='string'?`<td class="kind">${escape(c)}</td>`:`<td>${invNum(c)}</td>`).join('')}</tr>`).join('')}</tbody>${foot.length?`<tfoot>${foot.map(r=>`<tr><th scope="row">${escape(r[0])}</th>${r.slice(1).map(c=>typeof c==='string'?`<td></td>`:`<td>${invNum(c)}</td>`).join('')}</tr>`).join('')}</tfoot>`:''}</table></div>`;
+const invLinks=list=>(list||[]).map(([n,u])=>link(n,u)).join('');
+function investments(){const v=INV,ys=v.years,k27=v.focusYear?Math.max(0,ys.indexOf(v.focusYear)):Math.min(1,ys.length-1);
+return `<div class="eyebrow">${escape(v.eyebrow||'Investoinnit')}</div><h2 style="margin-top:10px">${escape(v.title)}</h2><p class="lead">${escape(v.lead)}</p><p class="sub">${escape(v.note)}</p>
+${(v.stats||[]).length?`<div class="stats">${v.stats.map(s=>`<div class="stat"><span class="small">${escape(s.label)}</span><span class="value">${escape(s.value)}</span><p class="small">${escape(s.note)}</p></div>`).join('')}</div>`:''}
+<section class="section"><h3>${escape(v.summary.title)}</h3><p class="small">${escape(v.summary.note)}</p>${invTable(v.summary.headers,v.summary.rows,v.summary.totals,v.summary.title)}<div class="sources" style="margin-top:13px">${invLinks(v.summary.sources)}</div></section>
+<section class="section"><h3>Hankkeet vuosittain</h3><p class="small">Investointimenot hankkeittain, 1 000 €. Avaa ryhmä nähdäksesi hankkeet. Suluissa ryhmän summa vuodelle ${escape(ys[k27])} ja koko kaudelle ${escape(ys[0])}–${escape(ys.at(-1))}.</p>
+${v.groups.map(g=>{const sum=g.total.reduce((a,b)=>a+b,0);const foot=[['Yhteensä','',...g.total]];if(g.income)foot.push(['Investointitulot','',...g.income]);return `<details><summary>${escape(g.title)} <span class="small">(${escape(ys[k27])}: ${invNum(g.total[k27])} · ${escape(ys[0])}–${escape(ys.at(-1))}: ${invNum(sum)}${g.page?' · '+escape(g.page):''})</span></summary>${invTable(['Hanke','Laji',...ys],g.rows.map(r=>[r[0],r[1],...r.slice(2)]),foot,g.title)}</details>`;}).join('')}</section>
+<section class="section"><h3>${escape(v.outside.title)}</h3><p class="small">${escape(v.outside.note)}</p>
+${v.outside.tables.map(t=>`<h4>${escape(t.title)} · ${invNum(t.total)} t€</h4>${invTable(['Hanke','Arvio, 1 000 €'],t.rows,[['Yhteensä',t.total]],t.title)}`).join('')}
+<p style="margin-top:14px"><strong>Investointitarve yhteensä ${invNum(v.outside.total)} tuhatta euroa.</strong></p></section>
+${(v.risks||[]).length?`<section class="section"><h3>Huomioitavaa ja avoimia kohtia</h3>${list(v.risks)}</section>`:''}
+${(v.questions||[]).length?`<section class="section"><h3>Nousseet kysymykset</h3>${list(v.questions)}</section>`:''}
+<section class="section"><h3>Lähteet</h3><div class="sources">${invLinks(v.sources)}</div></section>`;}
+
+if (INV) el('tab-investments').hidden = false;
 function renderNav(){const shown=items.filter(matches);el('agenda').innerHTML=shown.length?shown.map(i=>`<button class="nav-item" data-item="${i.n}" aria-current="${view==='item'&&selected===i.n}"><span class="num">§ ${i.n}</span><span class="navtext">${escape(i.short)}</span>${i.critical?'<span class="dot" aria-hidden="true"></span><span class="sr">, kaipaa tarkennusta</span>':''}</button>`).join(''):'<p class="empty">Ei hakutuloksia.</p>';el('mobile-nav').innerHTML='<option value="">Siirry asiaan…</option>'+shown.map(i=>`<option value="${i.n}" ${view==='item'&&selected===i.n?'selected':''}>§ ${i.n} · ${escape(i.short)}</option>`).join('');}
 function questionsFor(i){return '<ul class="q-list">'+i.questions.map((q,k)=>{let id=i.n+'-'+k;return `<li><label><input type="checkbox" data-question="${id}" ${checked.has(id)?'checked':''}><span>${escape(q)}</span></label></li>`;}).join('')+'</ul>';}
 function questions(){const found=items.filter(matches);const total=items.reduce((s,i)=>s+i.questions.length,0);return `<div class="eyebrow">Oma kokouslista</div><h2 style="margin-top:10px">Nousseet kysymykset</h2><p class="sub">Merkitse käsitelty kysymys rastilla. Merkinnät säilyvät tämän sivuistunnon aikana. Haku rajaa asioita myös tässä näkymässä.</p><div class="q-toolbar"><span class="small" id="qcount">${checked.size} / ${total} kysymystä käsitelty</span><button class="btn" id="reset-questions">Tyhjennä rastit</button></div>${found.map(i=>`<details ${i.critical?'open':''}><summary>§ ${i.n} · ${escape(i.short)} <span class="small">(${i.questions.length})</span></summary>${questionsFor(i)}<button class="jump" data-item="${i.n}">Lue asian tausta <span aria-hidden="true">→</span></button></details>`).join('')||'<p class="empty">Ei hakutuloksia.</p>'}`;}
@@ -536,10 +589,10 @@ function navigate(v,n){view=v;if(n)selected=Number(n);render();if(v==='item')his
 document.addEventListener('click',async e=>{const itemButton=e.target.closest('[data-item]');if(itemButton){navigate('item',itemButton.dataset.item);return;}const viewButton=e.target.closest('[data-view]');if(viewButton){navigate(viewButton.dataset.view);return;}if(e.target.id==='print'){document.querySelectorAll('#panel details').forEach(d=>d.open=true);window.print();}if(e.target.id==='reset-questions'){checked.clear();render();}if(e.target.id==='copy-issues'){const text=issues.map(i=>`§ ${i.n} — ${i.title}\n${i.text}`).join('\n\n');try{await navigator.clipboard.writeText(text);notify('Tarkistuslista kopioitu.');}catch{const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.append(ta);ta.select();const ok=document.execCommand('copy');ta.remove();notify(ok?'Tarkistuslista kopioitu.':'Kopiointi ei onnistunut tässä selaimessa.');}}});
 document.addEventListener('change',e=>{if(e.target.dataset.question){const id=e.target.dataset.question;e.target.checked?checked.add(id):checked.delete(id);document.querySelectorAll(`[data-question="${id}"]`).forEach(x=>x.checked=e.target.checked);if(el('qcount'))el('qcount').textContent=checked.size+' / '+items.reduce((s,i)=>s+i.questions.length,0)+' kysymystä käsitelty';}});
 el('search').addEventListener('input',e=>{query=e.target.value.trim().toLocaleLowerCase('fi');if(query&&view!=='questions')view='questions';render();announce(query?items.filter(matches).length+' asiaa vastaa hakua':'Haku tyhjennetty, kaikki asiat näkyvissä');});el('mobile-nav').addEventListener('change',e=>{if(e.target.value)navigate('item',e.target.value);});
-document.querySelector('[role=tablist]').addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;const tabs=[...document.querySelectorAll('.tab')];let k=tabs.indexOf(document.activeElement);if(k<0)return;e.preventDefault();k=e.key==='Home'?0:e.key==='End'?tabs.length-1:(k+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;tabs[k].focus();navigate(tabs[k].dataset.view);tabs[k].focus();});
+document.querySelector('[role=tablist]').addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;const tabs=[...document.querySelectorAll('.tab:not([hidden])')];let k=tabs.indexOf(document.activeElement);if(k<0)return;e.preventDefault();k=e.key==='Home'?0:e.key==='End'?tabs.length-1:(k+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;tabs[k].focus();navigate(tabs[k].dataset.view);tabs[k].focus();});
 
 const baseTitle=document.title;
-function setTitle(){const cur=items.find(x=>x.n===selected);const names={overview:'Tilannekuva',questions:'Nousseet kysymykset',sources:'Tarkennukset ja lähteet'};document.title=(view==='item'&&cur?'§ '+cur.n+' '+cur.title:names[view])+' · '+baseTitle;}
+function setTitle(){const cur=items.find(x=>x.n===selected);const names={overview:'Tilannekuva',investments:'Investoinnit',questions:'Nousseet kysymykset',sources:'Tarkennukset ja lähteet'};document.title=(view==='item'&&cur?'§ '+cur.n+' '+cur.title:names[view])+' · '+baseTitle;}
 function announce(t){el('live').textContent='';setTimeout(()=>el('live').textContent=t,50);}
 function notify(t){el('toast').textContent=t;announce(t);setTimeout(()=>el('toast').textContent='',2500);}
 
@@ -548,7 +601,7 @@ const requestedItem = items.find(item => hash === 'asia-' + item.n);
 if (requestedItem) {
   view = 'item';
   selected = requestedItem.n;
-} else if (['overview', 'questions', 'sources'].includes(hash)) {
+} else if (['overview', 'questions', 'sources'].includes(hash) || (INV && hash === 'investments')) {
   view = hash;
 }
 render();
