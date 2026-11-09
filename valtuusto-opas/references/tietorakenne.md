@@ -4,7 +4,7 @@ Kirjoita UTF-8-koodattu JSON. Esimerkin nimet, luvut ja osoitteet ovat kuvitteel
 
 Katso [esityslistan perustiedot](../examples/esityslista-esimerkki.json) ja [täytetty kokous-JSON](../examples/kokous-esimerkki.json). Perustiedoista voi luoda täytettävän luonnoksen skriptillä `scripts/prepare_meeting.py`. Se kopioi pykälät ja linkit ja jättää analyysin kentät täytettäviksi.
 
-- `meeting.time` ja `meeting.venue` ovat valinnaisia. `meeting.sources` voi sisältää koko oppaan yhteisiä lähteitä ja säädöslinkkejä.
+- `meeting.time` ja `meeting.venue` ovat valinnaisia. `meeting.sources` voi sisältää koko oppaan yhteisiä lähteitä ja säädöslinkkejä. Valinnainen `meeting.home` on paluulinkin osoite oppaiden luetteloon, esimerkiksi `"../index.html"`, kun opas tallennetaan repon `oppaat`-kansioon. Ilman sitä paluulinkkiä ei näytetä.
 - `overview.stats`, `overview.highlights`, `overview.sources` ja `overview.comparisonNote` ovat valinnaisia. Nostoissa ja tarkennuksissa `n` viittaa olemassa olevaan pykälään.
 - Jokaisella pykälällä on `facts`, `risks` ja `questions` tekstilistoina. Tyhjä lista sopii, jos riskiä tai kysymystä ei noussut. `critical` on valinnainen huomion merkki. `sources` sisältää pykälän muut lähteet.
 - Jokaisella pykälällä on `comparison.note`. Jos vertailtavaa lukua ei ole, selitä syy siinä. `rows` voi silloin puuttua. Oletuksena jokainen rivi sisältää neljä solua. `headers` voi korvata oletusotsikot esimerkiksi toteumavertailussa.

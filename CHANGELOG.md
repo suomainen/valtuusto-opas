@@ -2,6 +2,11 @@
 
 Versionumero on muotoa **pää.osa.korjaus**: pää = sivuston tai oppaan rakenteen kokonaan uusi versio, osa = uusi kokousopas tai ominaisuus, korjaus = pieni korjaus tai tarkennus. Uusin versio ensin.
 
+## 1.2.0
+
+- Oppaasta paluulinkki etusivulle: "← Kaikki kokousoppaat" otsikkoalueen yläreunassa ja alatunnisteessa.
+- HTML-pohjaan valinnainen `meeting.home`-kenttä paluulinkille; ohjeet päivitetty.
+
 ## 1.1.1
 
 - Etusivun alatunnisteeseen lähde ja maininta epävirallisesta aineistosta.

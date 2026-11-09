@@ -37,7 +37,7 @@ Voit kokeilla rakentamista suoraan täytetystä esimerkistä komennolla `python 
 
 ## Kokous-JSONin kentät
 
-- `meeting.time` ja `meeting.venue` ovat valinnaisia. `meeting.sources` voi sisältää koko oppaan yhteisiä lähteitä ja säädöslinkkejä.
+- `meeting.time` ja `meeting.venue` ovat valinnaisia. `meeting.sources` voi sisältää koko oppaan yhteisiä lähteitä ja säädöslinkkejä. Valinnainen `meeting.home` on paluulinkin osoite oppaiden luetteloon, esimerkiksi `"../index.html"`, kun opas tallennetaan repon `oppaat`-kansioon. Ilman sitä paluulinkkiä ei näytetä.
 - `overview.stats`, `overview.highlights`, `overview.sources` ja `overview.comparisonNote` ovat valinnaisia. Nostoissa ja tarkennuksissa `n` viittaa olemassa olevaan pykälään.
 - Jokaisella pykälällä on `facts`, `risks` ja `questions` tekstilistoina. Tyhjä lista sopii, jos riskiä tai kysymystä ei noussut. `critical` on valinnainen huomion merkki. `sources` sisältää pykälän muut lähteet.
 - Jokaisella pykälällä on `comparison.note`. Jos vertailtavaa lukua ei ole, selitä syy siinä. `rows` voi silloin puuttua. Oletuksena jokainen rivi sisältää neljä solua. `headers` voi korvata oletusotsikot esimerkiksi toteumavertailussa.
@@ -410,12 +410,13 @@ h4{font-size:17px;line-height:1.4;margin:22px 0 8px;color:var(--navy);font-weigh
 tbody th{font:inherit;color:inherit;letter-spacing:0;text-align:left}
 .toast:empty{display:none}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.priority:hover{transform:none}}
-@media print{.skip,.sr{display:none!important}}
+.home{display:inline-flex;gap:6px;align-items:center;color:#fff;font-size:14px;margin-bottom:12px;text-underline-offset:3px}.home:hover{text-decoration-thickness:2px}.home:focus-visible{outline-color:var(--yellow)}
+@media print{.skip,.sr,.home{display:none!important}}
 </style>
 </head>
 <body>
 <a class="skip" href="#panel">Siirry sisältöön</a>
-<header><div class="topline"><div><div class="eyebrow" id="guide-city"></div><h1 id="guide-date"></h1><div class="sub" id="guide-meta"></div></div><button class="btn print" id="print">Tulosta näkymä</button></div>
+<header><div class="topline"><div><a class="home" id="guide-home" hidden><span aria-hidden="true">←</span> Kaikki kokousoppaat</a><div class="eyebrow" id="guide-city"></div><h1 id="guide-date"></h1><div class="sub" id="guide-meta"></div></div><button class="btn print" id="print">Tulosta näkymä</button></div>
 <div class="tabs" role="tablist" aria-label="Kokousoppaan näkymät"><button class="tab" id="tab-overview" role="tab" aria-controls="panel" aria-selected="true" data-view="overview">Tilannekuva</button><button class="tab" id="tab-item" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="item">Asiat</button><button class="tab" id="tab-questions" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="questions">Nousseet kysymykset</button><button class="tab" id="tab-sources" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-view="sources">Tarkennukset ja lähteet</button></div></header>
 <div class="layout"><aside class="sidebar" aria-label="Esityslistan asiat"><div class="eyebrow nav-caption">Esityslista</div><label for="search" class="sr">Hae asioista</label><input class="search" id="search" type="search" placeholder="Hae asiaa tai teemaa…" autocomplete="off"><select id="mobile-nav" class="mobile-select" aria-label="Valitse esityslistan asia"><option value="">Siirry asiaan…</option></select><nav id="agenda"></nav><div class="small" style="margin-top:20px">Punainen piste merkitsee asiaa, joka kaipaa tarkennusta.</div></aside><main class="content" id="sisalto"><div id="panel" role="tabpanel" aria-labelledby="tab-overview" tabindex="-1"></div></main></div><div class="toast" id="toast" aria-hidden="true"></div><div class="sr" id="live" role="status" aria-live="polite"></div>
 <script type="application/json" id="guide-data">__GUIDE_DATA__</script>
@@ -435,6 +436,7 @@ const matches = item => !query || JSON.stringify(item).toLocaleLowerCase('fi').i
 const links = entries => (entries || []).map(([label, url]) => link(label, url)).join('');
 el('guide-city').textContent = meeting.city + ' / valtuutetun kokousopas';
 el('guide-date').textContent = meeting.date;
+if (meeting.home) { el('guide-home').href = meeting.home; el('guide-home').hidden = false; }
 el('guide-meta').textContent = [meeting.time, meeting.venue, 'Esityslista § ' +
   (items.length === 1 ? items[0].n : items[0].n + '–' + items.at(-1).n)].filter(Boolean).join(' · ');
 document.title = meeting.city + ' · Valtuuston kokous ' + meeting.date;
@@ -522,7 +524,7 @@ function render() {
   setTitle();
   el('panel').setAttribute('aria-labelledby', 'tab-' + view);
   el('panel').innerHTML = ({overview, item, questions, sources})[view]() +
-    `<footer>Valtuutetun valmistautumisaineisto · Aineisto tarkistettu ${escape(meeting.reviewed)} · ${escape(meeting.stage)}</footer>`;
+    `<footer>Valtuutetun valmistautumisaineisto · Aineisto tarkistettu ${escape(meeting.reviewed)} · ${escape(meeting.stage)}${meeting.home ? ` <a href="${escape(meeting.home)}">Kaikki kokousoppaat</a>` : ''}</footer>`;
 }
 
 function renderNav(){const shown=items.filter(matches);el('agenda').innerHTML=shown.length?shown.map(i=>`<button class="nav-item" data-item="${i.n}" aria-current="${view==='item'&&selected===i.n}"><span class="num">§ ${i.n}</span><span class="navtext">${escape(i.short)}</span>${i.critical?'<span class="dot" aria-hidden="true"></span><span class="sr">, kaipaa tarkennusta</span>':''}</button>`).join(''):'<p class="empty">Ei hakutuloksia.</p>';el('mobile-nav').innerHTML='<option value="">Siirry asiaan…</option>'+shown.map(i=>`<option value="${i.n}" ${view==='item'&&selected===i.n?'selected':''}>§ ${i.n} · ${escape(i.short)}</option>`).join('');}
