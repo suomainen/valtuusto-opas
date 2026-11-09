@@ -80,6 +80,13 @@ def validate(data):
             require_text(attachment, "title", "status", "summary")
             if attachment.get("url"):
                 require_url(attachment["url"])
+        answers = item.get("answers", [])
+        if len(answers) > len(item["questions"]):
+            raise ValueError(f"§ {item['n']}: vastauksia on enemmän kuin kysymyksiä.")
+        for answer in answers:
+            if answer:
+                require_text(answer, "status", "text")
+                validate_links(answer)
 
     investments = data.get("investments")
     if investments:

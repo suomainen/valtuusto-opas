@@ -2,6 +2,12 @@
 
 Versionumero on muotoa **pää.osa.korjaus**: pää = sivuston tai oppaan rakenteen kokonaan uusi versio, osa = uusi kokousopas tai ominaisuus, korjaus = pieni korjaus tai tarkennus. Uusin versio ensin.
 
+## 1.5.0
+
+- Oppaan 11.11.2026 kaikkiin 48 kysymykseen haettu verkosta mahdollinen vastaus (”Mitä löytyi”): tila (vastaus löytyi / osittainen / ei löytynyt), tiivistelmä ja lähteet. Vastaukset näkyvät asiakohdissa ja Nousseet kysymykset -näkymässä.
+- § 48: Paimion osuus yhteisistä kustannuksista 1,85 % (2025–2026, Turun KH:n asiakirjat) ja Työvoimapalvelut-tulosalueen toimintakate 1,954 → 2,377 milj. € vertailutaulukkoon.
+- HTML-pohjaan ja `build_guide.py`:hin valinnainen `answers`-kenttä; ohjeet päivitetty.
+
 ## 1.4.0
 
 - Oppaaseen 11.11.2026 uusi Investoinnit-välilehti: yhteenveto toimielimittäin (TP2025–2031), hankkeet vuosittain 2026–2031 kymmenessä ryhmässä, suunnittelukauden ulkopuolelle jäävät hankkeet (25,9 milj. €), huomiot ja kysymykset. Hankkeiden summat tarkistettu kirjan välisummiin. § 45:stä linkki näkymään.

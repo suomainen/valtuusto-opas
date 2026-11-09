@@ -20,6 +20,7 @@ Oppaan tekee valtuutettu Oskari Summanen. Asiakirjoista poimitut tiedot ja oma t
 - Investoinnit-näkymä: yhteenveto toimielimittäin, hankkeet vuosittain koko suunnittelukaudelta ja suunnittelukauden ulkopuolelle jäävät hankkeet
 - Jokaisessa asiassa nykytilanne → esitys -vertailu: nykyinen arvo, ehdotettu arvo ja muutos sekä vuosi ja tiedon laji (talousarvio, ennuste, toteuma)
 - Asiat jaettu osiin: todettu ja päätösehdotus, oma tilannearvio, huomioitavaa ja avoimia kohtia, nousseet kysymykset
+- Kysymysten alla verkosta haettu ”Mitä löytyi” -tieto lähteineen
 - Haku kaikista asioista. Kysymyksiä voi rastia käsitellyiksi kokouksen aikana.
 - Linkit suoraan pykäliin ja liitteisiin kaupungin kokousjulkaisussa. Asiaan voi linkittää osoitteella, esim. `#asia-47`.
 - Tulostus näkymä kerrallaan
