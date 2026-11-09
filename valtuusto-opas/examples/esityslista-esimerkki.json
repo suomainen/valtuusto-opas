@@ -1,0 +1,20 @@
+{
+  "meeting": {
+    "city": "Esimerkkikunta",
+    "date": "12.5.2027",
+    "time": "Klo 18.00",
+    "venue": "Valtuustosali",
+    "url": "https://example.org/esityslista"
+  },
+  "items": [
+    {
+      "n": 7,
+      "title": "Palvelumaksun tarkistus",
+      "short": "Palvelumaksu",
+      "url": "https://example.org/pykala-7",
+      "attachments": [
+        {"title": "Maksutaulukko", "url": "https://example.org/maksut.pdf"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+SIVU 1
+      LIITE 6 
+ 
+ 
+Turun työllisyysalueen eri tahojen IT-kokonaisuuteen liittyvät tehtävät ja vastuut  
+ 
+• Lähipalveluja tuottavat jäsenkunnat vastaavat  
+o käyttövaltuuksien myöntämisestä ja hallinnoimisesta valtakunnalliseen 
+asiakastietojärjestelmäkokonaisuuteen omassa organisaatiossaan, siten että 
+käyttöoikeuksien hallinta, valvonta ja poisto on järjestetty työtehtävien 
+mukaisten tarpeiden perusteella ajantasaisesti; 
+o työvälineiden (esim. työasemat, puhelimet, liittymät, kuulokkeet, hiiret, 
+näytöt, telakat) hankkimisesta ja järjestämisestä sekä niihin liittyvästä tuesta 
+ja ylläpidosta oman kuntansa palveluksessa oleville henkilöille.  
+o oman kuntansa palveluksessa olevien henkilöiden käyttäjätunnuksista ja 
+niihin liittyvistä prosesseista  
+o oman kuntansa palveluksessa olevien henkilöiden tietoliikenneyhteyksistä ja 
+niihin liittyvistä ylläpidosta ja tuesta  
+o Single sign on -kirjautumisen ja vahvan tunnistautumisen toteutuksesta ja 
+ylläpidosta KEHAn käyttövelvoitejärjestelmiin oman kuntansa toteutuksen 
+osalta  
+o Single sign on -kirjautumisen ja vahvan tunnistautumisen rakentamisesta ja 
+ylläpidosta työllisyysalueen yhteisiin tietojärjestelmiin (esim.  työllisyysalueen 
+yhteinen intra) oman kuntansa toteutuksen osalta  
+o mahdollisten kunnan omien järjestelmien ja KEHAn 
+käyttövelvoitejärjestelmien välille rakennettavien integraatioiden 
+toteutuksesta, ylläpidosta ja tuesta oman kuntansa IT-ympäristöön liittyvien 
+toimenpiteiden osalta  
+o mahdollisten Turun työllisyysalueen kuntien järjestelmien välille 
+rakennettavien integraatioiden toteutuksesta, ylläpidosta ja tuesta oman 
+kuntansa IT-ympäristöön liittyvien toimenpiteiden osalta  
+o Turun työllisyysalueen päätöksellä yhteisiksi hankittujen omien järjestelmien 
+käyttöönottovaiheen ja jatkuvan palvelun vaatimuksista oman kuntansa 
+palveluksessa olevien henkilöiden osalta 
+o kunnan omien järjestelmien ylläpidosta ja tuesta  
+  
+ 
+• Turun työllisyysalueen vastuukunta Turku vastaa  
+o oman kuntansa henkilöstön ja IT-ympäristön osalta edellä mainituista 
+vastuista  
+o työllisyysalueen yhteisten tietojärjestelmien/IT-ratkaisujen suunnittelusta, 
+hankinnasta, käyttöönotosta ja sopimusten ja toimittajien hallinnasta 
+o työllisyysalueen omien (yhteisten) tietojärjestelmien/IT-ratkaisujen 
+pääkäyttäjyydestä ja niiden käytön ohjeistuksesta 
+  
+ 

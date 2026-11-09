@@ -1,0 +1,70 @@
+SIVU 1
+ 
+ 
+TE- ja KOTO-valtionosuusmaksujen laskentaperusteet 
+ 
+Valtionvarainministeriön kuntien peruspalveluiden valtionosuusmaksulaskelmissa [1] 
+työvoimapalveluiden järjestämisestä annetun lain mukaisten ja työvoimaviranomaiselle 
+kotoutumislain mukaisesti kuuluvien tehtävien rahoitus oli vuodelle 2025 yhteensä 606 831 000 €. 
+Summa jakautui kolmen kriteerin (18–64-vuotias väestö, laaja työttömyys (työttömät ja palveluissa 
+olevat) sekä vieraskielisten lukumäärä) mukaisesti laskettaviin osuuksiin. Rahoitus jakautui vuodelle 
+2025 kriteerien kesken niin, että väestökriteerin ja laaja työttömyys 
+-kriteerin perusteilla kummallakin jaettiin 271 729 500 € ja vieraskielisyyskriteerin rahoitus oli 
+63 372 000 €. Tällöin kriteerien suhteelliset osuudet olivat työikäisellä väestöllä sekä laajalla 
+työttömyydellä 44,78 % ja vieraskielisyyskriteerillä 10,44 %. Näiden kriteerien pohjalta muodostuvaa 
+rahoitusta kutsutaan laskennalliseksi rahoitukseksi. 
+ 
+Siirtymäaikana eli vuosina 2025 ja 2026 työvoimapalveluiden valtionosuusmaksut koostuivat osittain 
+laskennallisesta rahoituksesta ja edeltävän vuoden palveluiden tuottamisen kustannusten 
+toteumasta. Vuonna 2025 laskennallisen rahoituksen osuus oli 50 %, vuonna 2026 osuus nousi 75 
+%:in ja tätä seuraavina vuosina rahoitus on puhtaasti laskennallista rahoitusta.  Koska TE-
+palveluiden valtionosuusrahoitus sulautettiin osaksi yleistä valtionosuusmaksujärjestelmää, vuotta 
+2025 koskevien laskelmien jälkeen kunnilla ei ole ollut näkymää tarkkoihin TE- ja KOTO-
+valtionosuusmaksuihin.  
+ 
+Vuosittain päivittyvä kustannustenjakomalli  
+ 
+Turun työllisyysalueen yhteisvastuulliset kustannukset jaetaan kuntien kesken niin, että kunkin 
+kunnan suhteellinen maksuosuus on kunnan osuus koko alueen TE- ja KOTO-palveluiden 
+valtionosuusrahoituksesta. Tämän lisäksi useamman kunnan toiminta-alueilla lähipalveluiden kulut 
+jaetaan toiminta-alueen kuntien kesken samalla periaatteella, jolloin kunnan maksuosuus määräytyy 
+kunnan saaman rahoituksen suhteesta toiminta-alueen kokonaisrahoitukseen.  
+ 
+Edellisessä, 1.1.2025 voimaan astuneessa sopimusversiossa oli esitetty vuotta 2025 koskevasta 
+rahoituksesta määritetyt kuntakohtaiset maksuosuudet (ko. sopimuksen liite 3), joita sopimukseen 
+pohjautuen oli tarkoitus käyttää vuoden 2027 loppuun asti. Vuoden 2025 rahoitus pohjautui vuoden 
+2023 väestötietoihin laskennallisen rahoituksen osalta. Koska rahoitukseen vaikuttavien 
+väestöryhmien koot ovat tämän jälkeen muuttuneet merkittävästi, on päätetty siirtyä 1.1.2027 alkaen 
+käyttämään vuosittain päivittyviä maksuosuuksia. Päivittyvät maksuosuudet pohjautuvat edeltävän 
+vuoden väestötietojen vuosikeskiarvoihin ja ne toimitetaan kunnille vuosittain ennen ensimmäistä 
+laskutusta. 1.1.2025 voimaan astuneen sopimuksen liite 3 mukaisia maksuosuuksia sovelletaan 
+vuoden 2026 loppuun asti. 
+ 
+Suhteellisten osuuksien laskeminen väestötietojen pohjalta 
+ 
+Laskennallisen rahoituksen perustana on maanlaajuinen valtion myöntämä kokonaisrahoitus 
+työllisyyspalveluille. Kokonaisrahoitus jaetaan kolmen eri kriteerin mukaisesti laskettaviin osuuksiin. 
+Nämä kriteerit ovat 18-64 -vuotias väestö, laaja työttömyys ja vieraskielisten lukumäärä.  
+ 
+Kullekin kriteerille on määrätty painokerroin: työikäisten ja laajan työttömyyden painokerroin on 
+44,78% ja vieraskielisten 10,44%. Kriteerikohtaiset yksikköhinnat lasketaan kertomalla 
+kokonaisrahoitus kriteerin painokertoimella ja jakamalla tulos koko maan kyseisen kriteerin alaisella 
+väestömäärällä. 
+ 
+Kunnan saama rahoitus kunkin kriteerin osalta on kriteerin alainen väestömäärä kunnassa 
+kerrottuna kriteerin yksikköhinnalla. Kunnan kokonaisrahoitus on näiden kolmen kriteerien 
+rahoitusten summa.  
+
+SIVU 2
+ 
+Työllisyysalueen saama kokonaisrahoitus voidaan laskea joko summaamalla alueen kuntien saamat 
+rahoitukset tai selvittämällä kriteerien alaiset väestömäärät työllisyysalueella ja kertomalla kriteerien 
+yksikköhinnat näillä väestömäärillä.  
+ 
+Koska maanlaajuinen kokonaisrahoitus on mukana jokaisessa yksittäisessä summassa samassa 
+muodossa, sillä ei ole vaikutusta kuntien suhteellisiin maksuosuuksiin. Kokonaisrahoitus toimii 
+kaikissa laskelmissa samanlaisena kertoimena, eikä tällainen yhteinen kerroin muuta kuntien välisiä 
+suhteita. Suhteelliset osuudet määräytyvät siten ainoastaan kriteerien prosenttiosuuksien ja kriteerien 
+alaisten väestömäärien perusteella. Kriteerien prosenttiosuudet ovat ennalta määritettyjä, ja 
+väestömäärät ovat jäljitettävissä virallisista tilastoista, mikä varmistaa laskennan läpinäkyvyyden ja 
+todennettavuuden. 

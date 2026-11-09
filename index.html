@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Paimion kaupunginvaltuuston kokousoppaat: pykäläkohtaiset tilannekuvat, vertailuluvut ja kysymykset esityslistan pohjalta.">
+<title>Valtuusto-opas · Paimio</title>
+<style>
+:root{--navy:#072b4c;--blue:#0f5ba1;--yellow:#ffd166;--ink:#2d2f30;--soft:#6b6f73;--line:#e3e3e3;--tint:#e4ebf5}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;border-top:14px solid var(--blue)}
+a{color:var(--blue);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+header{padding:20px 20px 0}
+.hero{position:relative;isolation:isolate;overflow:hidden;max-width:1100px;margin:auto;padding:38px 34px 70px;border-radius:24px 24px 0 0;background:linear-gradient(105deg,var(--navy),#164e7d 68%,#3f7fbf);color:#fff}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:38px;z-index:-1;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 70' preserveAspectRatio='none'%3E%3Cpath fill='white' d='M0 48C200 80 420 0 680 16S1120 70 1440 12V70H0Z'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.eyebrow{color:var(--yellow);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+h1{font-size:clamp(30px,4vw,46px);letter-spacing:-.8px;font-weight:600;line-height:1.15;margin:12px 0 14px}
+.hero p{max-width:720px;margin:0;font-size:17px}
+main{max-width:1100px;margin:auto;padding:28px 20px 60px}
+h2{color:var(--navy);font-weight:600;font-size:24px;letter-spacing:-.4px;margin:30px 0 14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{display:block;border:1px solid var(--line);border-radius:13px;padding:20px 22px;text-decoration:none;color:inherit;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.card:hover{border-color:var(--blue);transform:translateY(-1px)}
+.card strong{display:block;color:var(--navy);font-size:19px;font-weight:600;margin:6px 0 4px}
+.card span.small{color:var(--soft);font-size:14px}
+.badge{display:inline-block;padding:3px 9px;border-radius:5px;background:var(--tint);color:var(--blue);font-size:12px;font-weight:700}
+ul{padding-left:22px}li{margin:6px 0}
+.note{border-left:3px solid var(--blue);padding:10px 16px;background:var(--tint);border-radius:0 8px 8px 0;font-size:14px;margin-top:26px}
+footer{max-width:1100px;margin:auto;padding:18px 20px 40px;border-top:1px solid var(--line);font-size:12px;color:var(--soft)}
+@media(max-width:650px){header{padding:14px 12px 0}.hero{padding:28px 22px 60px}main{padding:22px 16px 40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="hero">
+    <div class="eyebrow">Paimion kaupunginvaltuusto</div>
+    <h1>Valtuusto-opas</h1>
+    <p>Kokousoppaat valtuustokokouksiin valmistautumiseen. Oppaassa käydään läpi pykälät, niiden liitteet, keskeiset luvut verrattuna nykytilaan sekä avoimet kysymykset.</p>
+  </div>
+</header>
+<main>
+  <h2>Kokousoppaat</h2>
+  <div class="cards">
+    <a class="card" href="oppaat/paimio-valtuusto-11-11-2026.html">
+      <span class="badge">Esityslista 5/2026</span>
+      <strong>Valtuusto 11.11.2026</strong>
+      <span class="small">§ 43–56 · talousarvio 2027, veroprosentit, työllisyysalueen sopimukset, Tilikunnan osakekauppa</span>
+    </a>
+  </div>
+
+  <h2>Oppaan tekeminen</h2>
+  <ul>
+    <li><a href="https://github.com/suomainen/valtuusto-opas/tree/main/valtuusto-opas">valtuusto-opas-skill</a>: ohje, HTML-pohja, JSON-mallit ja Python-skriptit uuden oppaan rakentamiseen.</li>
+    <li><a href="https://github.com/suomainen/valtuusto-opas/blob/main/rakennusohje.md">Rakennusohje</a>: koko työkalu yhtenä jaettavana Markdown-tiedostona.</li>
+    <li><a href="https://github.com/suomainen/valtuusto-opas">Lähdekoodi GitHubissa</a></li>
+  </ul>
+
+  <p class="note">Oppaat ovat valmistautumisen apuvälineitä, eivät virallisia asiakirjoja. Ratkaisevat tiedot ovat aina kaupungin julkaisemassa esityslistassa ja sen liitteissä, joihin oppaat linkittävät.</p>
+</main>
+<footer>© Oskari Summanen · <a href="https://summanen.org">summanen.org</a> · Versio 1.0.0</footer>
+</body>
+</html>

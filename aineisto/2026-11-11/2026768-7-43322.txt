@@ -1,0 +1,240 @@
+SIVU 1
+  1 (5)  
+  
+ 
+ 
+  
+  
+ 
+   
+ 
+Turun kaupungin ehdot henkilötietojen käsittelijälle  
+ 
+ 
+1 Yleistä 
+ 
+1.1 Tämä sopimusliite ”Turun kaupungin ehdot henkilötietojen käsittelijälle” on osa sopimusta 
+kuntalain 54 §:n mukaisesta viranomaistehtävän hoidosta, jäljempänä ”Sopimus”. 
+ 
+1.2 Tässä sopimusliitteessä määritetään vastuukuntaa ja jäsenkuntaa sitovasti ne henkilötietojen 
+käsittelyä ja tietosuojaa koskevat sopimusehdot, joiden mukaisesti jäsenkunta käsittelee 
+henkilötietoja vastuukunnan puolesta ja lukuun. Mikäli jäsenkunta muodostaa Sopimuksen 
+toteuttamisen yhteydessä henkilörekistereitä, jäsenkunta vastaa niistä EU:n yleisen tietosuoja-
+asetuksen mukaisena rekisterinpitäjänä. 
+ 
+1.3 Sopijapuolet sitoutuvat noudattamaan toiminnassaan soveltuvaa voimassaolevaa 
+henkilötietojen käsittelyyn ja tietosuojaan liittyvää lainsäädäntöä, ja lisäksi Sopijapuolet 
+sitoutuvat saattamaan henkilötietojen käsittelyn ja tietosuojan EU:n yleisen tietosuoja-
+asetuksen (EU)2016/679 mukaiselle vaatimustasolle ennen Sopimuksen toteuttamiseen 
+ryhtymistä. 
+ 
+2 Sopijapuolten roolit henkilötietojen käsittelyssä 
+ 
+2.1 Vastuukunta toimii työvoimapalveluiden valtakunnalliseen tietovarantoon tallennettavien 
+henkilötietojen käsittelyä ja tietosuojaa koskevan lainsäädännön tarkoittamana 
+rekisterinpitäjänä, silloin kun se määrittelee henkilötietojen käsittelyn tarkoitukset ja keinot. 
+Sopijapuolet ymmärtävät, että rekisterinpitäjänä vastuukunta saa käyttää ainoastaan sellaisia 
+henkilötietojen käsittelijöitä, jotka toteuttavat riittävät suojatoimet asianmukaisten teknisten ja 
+organisatoristen toimien täytäntöön panemiseksi niin, että käsittely täyttää kulloinkin 
+voimassaolevan henkilötietojen käsittelyyn ja tietosuojaan liittyvän kansallisen lainsäädännön 
+vaatimukset ja EU:n yleisen tietosuoja-asetuksen vaatimukset, ja että sillä varmistetaan 
+rekisteröidyn oikeuksien suojelu. 
+ 
+2.2 Jäsenkunta toimii henkilötietojen käsittelyä ja tietosuojaa koskevan lainsäädännön 
+tarkoittamana henkilötietojen käsittelijänä, joka käsittelee vastuukunnan henkilötietoja 
+vastuukunnan puolesta ja lukuun.  
+ 
+3 Alihankkijat, jotka käsittelevät henkilötietoja 
+ 
+3.1 Jäsenkunta ei saa käyttää henkilötietojen käsittelyyn alihankkijaa ilman vastuukunnan antamaa 
+kirjallista ennakkolupaa. Jäsenkunnan on tiedotettava vastuukunnalle kirjallisesti kaikista 
+suunnitelluista muutoksista, jotka koskevat henkilötietojen käsittelijöinä toimivien alihankkijoiden 
+lisäämistä tai vaihtamista. Vastuukunnalla on oikeus kieltää jäsenkunnan esittämät muutokset.  
+ 
+3.2 Siltä osin kuin jäsenkunta käyttää toiminnassaan alihankkijoita, jotka käsittelevät henkilötietoja, 
+alihankintaan sovelletaan Sopimuksen lisäksi tässä sopimusliitteessä kuvattuja ehtoja. 
+SIVU 2
+  2 (5)  
+  
+ 
+ 
+  
+ 
+ 
+   
+ 
+Jäsenkunnalla on velvollisuus sopimuksilla sitouttaa käyttämänsä alihankkijat noudattamaan 
+tämän sopimusliitteen ehtoja. 
+3.3 Jäsenkunta on vastuussa mahdollisista työllisyysalueen henkilötietoja käsittelevien 
+alihankkijoidensa Sopimuksen, tämän sopimusliitteen tai sovellettavan lainsäädännön taikka 
+EU:n yleisen tietosuoja-asetuksen rikkomisista tai laiminlyönneistä kuin omistaan. Jos tietojen 
+käsittelyä suorittava alihankkija ei täytä tietosuojavelvoitteitaan, jäsenkunta on edelleen 
+täysimääräisesti vastuussa suhteessa vastuukuntaan. Jos vastuukunta perustellusti katsoo, 
+että jäsenkunnan alihankkija ei täytä tietosuojavelvoitteitaan, vastuukunnalla on oikeus vaatia 
+jäsenkuntaa vaihtamaan alihankkijaa. Jäsenkunnan on vastuukunnan perustellusta 
+vaatimuksesta vaihdettava alihankkijaa ilman aiheetonta viivästystä.  
+ 
+4 Henkilötietojen käsittelijän yleiset velvollisuudet 
+ 
+4.1 Henkilötietojen käsittelijä käsittelee henkilötietoja lain ja vastuukunnan antamien ohjeiden 
+mukaisesti. 
+ 
+4.2 Henkilötietojen käsittelijä sitoutuu varmistamaan, että kaikki sen alaisuudessa toimivat henkilöt, 
+joilla on oikeus käsitellä henkilötietoja, ovat sitoutuneet noudattamaan salassapitovelvollisuutta 
+tai heitä koskee asianmukainen lakisääteinen salassapitovelvollisuus. 
+ 
+4.3 Henkilötietojen käsittelijän on myös toteutettava toimenpiteet sen varmistamiseksi, että jokainen 
+henkilötietojen käsittelijän alaisuudessa toimiva luonnollinen henkilö, jolla on pääsy 
+henkilötietoihin, käsittelee niitä ainoastaan lain ja vastuukunnan ohjeiden mukaisesti. 
+ 
+4.4 Henkilötietojen käsittelijä sitoutuu ilman aiheetonta viivästystä ilmoittamaan vastuukunnalle 
+kaikista rekisteröityjen pyynnöistä, jotka koskevat voimassa olevan lainsäädännön sekä EU:n 
+yleisen tietosuoja-asetuksen mukaisten rekisteröidyn oikeuksien käyttämistä. 
+ 
+4.5 Henkilötietojen käsittelijä sitoutuu avustamaan vastuukuntaa asianmukaisilla teknisillä ja 
+organisatorisilla toimenpiteillä, jotta vastuukunta pystyy täyttämään velvollisuutensa vastata 
+pyyntöihin, jotka koskevat rekisteröidyn oikeuksien käyttämistä. Näiden oikeuksien käyttämistä 
+koskevat pyynnöt voivat edellyttää siltä avustamista rekisteröidylle tiedottamisessa ja 
+viestinnässä sekä rekisteröidyn oikeuksien toteuttamisessa.  
+ 
+ 
+4.6 Henkilötietojen käsittelijä sitoutuu tarvittaessa avustamaan vastuukuntaa EU:n yleisen 
+tietosuoja-asetuksen mukaisen tietosuojaa koskevan vaikutusten arvioinnin tekemisessä, 
+mahdollisessa ennakkokuulemisessa ja mahdollisen tietosuojaa koskevan sertifioinnin 
+hankkimisessa.  
+ 
+4.7 Henkilötietojen käsittelijä ei saa siirtää henkilötietoja EU:n tai ETA-alueen ulkopuolelle ilman 
+vastuukunnan kirjallista ennakkolupaa. 
+ 
+4.8 Henkilötietojen käsittelijä saattaa vastuukunnan saataville kaikki tiedot, jotka ovat tarpeen tässä 
+sopimusliitteessä kuvattujen velvollisuuksien noudattamisen osoittamista varten, ja sallii 
+SIVU 3
+  3 (5)  
+  
+ 
+ 
+  
+ 
+ 
+   
+ 
+vastuukunnan valtuuttaman auditoijan suorittamat auditoinnit, kuten tarkastukset, sekä 
+osallistuu niihin.  
+ 
+5 Tietoturvaloukkaukset 
+ 
+5.1 Henkilötietojen käsittelijän on ilmoitettava kirjallisesti henkilötietojen tietoturvaloukkauksesta tai 
+sen epäillystä vastuukunnalle viipymättä, mutta viimeistään 24 tunnin kuluessa tiedon 
+saamisesta. Ilmoitus voi olla alustava, ja sitä voidaan täydentää annetun määräajan jälkeen 
+ilman aiheetonta viivästystä. Alustavan ilmoituksen tulee sisältää seuraavat asiat: 1) mitä 
+epäillään tapahtuneen, milloin ja koska tullut ilmi, 2) alustava arvio mitä henkilötietoja ja kuinka 
+monen henkilön tietoja loukkaus koskee ja 3) kuka antaa lisätietoja? Lisäksi jäsenkunta sitoutuu 
+ilmoittamaan vastuukunnalle muista olennaisista häiriö- tai ongelmatilanteista, joilla voi olla 
+vaikutuksia rekisteröityjen asemaan ja oikeuksiin. Ilmoitus on tehtävä edellä mainitussa 
+määräajassa. 
+ 
+ 
+5.2 Henkilötietojen käsittelijän on annettava vastuukunnalle viipymättä, kuitenkin viimeistään 
+seitsemän (7) päivän kuluessa, vähintään seuraavat tiedot tietoturvaloukkauksesta: 
+ 
+1) kuvattava henkilötietojen tietoturvaloukkaus, mukaan lukien mahdollisuuksien mukaan 
+asianomaisten rekisteröityjen ryhmät ja arvioidut lukumäärät sekä henkilötietotyyppien 
+ryhmät ja arvioidut lukumäärät;  
+ 
+2) tietojärjestelmään kohdistuneen tietoturvaloukkauksen tapahtuma-ajan lokitiedot, joilla 
+tarkoitetaan aikajärjestyksessä kirjattua tallennetta tietoverkkojen, sovellusten, järjestelmien 
+ja tietosisältöjen tapahtumista ja niiden aiheuttajista; 
+ 
+3) ilmoitettava tietosuojavastaava tai muu vastuuhenkilö, jolta voi saada asiassa lisätietoja; 
+ 
+4) kuvattava henkilötietojen tietoturvaloukkauksen todennäköiset seuraukset; 
+ 
+5) esitettävä arvio aiheutuuko tietoturvaloukkauksesta todennäköisesti rekisteröidyn oikeuksiin 
+tai vapauksiin kohdistuva korkea riski; sekä 
+ 
+6) kuvattava toimenpiteet, joita kyseinen henkilötietojen käsittelijä ehdottaisi tai joita se on 
+toteuttanut henkilötietojen tietoturvaloukkauksen johdosta ja tarvittaessa myös toimenpiteet 
+mahdollisten haittavaikutusten lieventämiseksi. 
+ 
+6 Muita vaatimuksia 
+ 
+6.1 Vastuukunnalla on oikeus muuttaa, täydentää ja päivittää jäsenkunnalle antamiaan 
+henkilötietojen käsittelyä ja tietosuojaa koskevia ohjeita. Nämä ohjeet voivat olla henkilötietojen 
+käsittelyä tai tietosuojaa koskeviin teknisiin tai organisatorisiin toimenpiteisiin liittyviä muutoksia, 
+täydennyksiä tai päivityksiä. Jäsenkunta ja muut henkilötietojen käsittelijät sitoutuvat 
+noudattamaan näitä muutettuja, täydennettyjä tai päivitettyjä ohjeita. 
+ 
+SIVU 4
+  4 (5)  
+  
+ 
+ 
+  
+ 
+ 
+   
+ 
+6.2 Jäsenkunta sitoutuu reagoimaan viimeistään 36 tunnin kuluessa vastuukunnan yhteydenotosta 
+ja vastaamaan viimeistään yhden (1) viikon kuluessa vastuukunnan tietosuojaa koskeviin 
+ilmoituksiin, reklamaatioihin tai muihin viesteihin, pois lukien EU:n yleisen tietosuoja-asetuksen 
+mukaiset tietoturvaloukkaukset, joihin sovelletaan Sopimuksessa ja edellä tässä liitteessä 
+määritettyjä määräaikoja.  
+ 
+6.3 Jos Sopijapuoli laiminlyö tai rikkoo tätä sopimusliitettä, sovellettavaa lainsäädäntöä tai EU:n 
+yleistä tietosuoja-asetusta, Sopijapuolen korvausvastuu on määritelty Sopimuksen lisäksi 
+sovellettavassa lainsäädännössä. Lisäksi tällainen laiminlyönti tai rikkomus voi muodostaa 
+Sopimuksessa tarkoitetun olennaisen sopimusrikkomuksen, jonka seurauksena vastuukunnalla 
+on halutessaan oikeus turvautua Sopimuksessa määriteltyihin oikeussuojakeinoihin. Vähäistä 
+laiminlyöntiä tai rikkomusta ei pidetä olennaisena sopimusrikkomuksena. 
+ 
+ 
+ 
+  
+SIVU 5
+  5 (5)  
+  
+ 
+ 
+  
+ 
+ 
+   
+ 
+Osa II: Henkilötietojen käsittelytoimien kuvaus 
+ 
+Sopijapuolet ovat sopineet, että Toimittaja käsittelee Tilaajan puolesta Sopimuksessa sovitun 
+palvelun toteuttamiseksi seuraavia henkilötietoja: 
+ 
+Henkilötietojen tyypit (valitaan yksi suurimman riskin mukaan): 
+ 
+￿ Matala riski  
+(esim. henkilötietojen käsittely kohdistuu tavanomaisiin yhteystietoihin) 
+ 
+￿ Keskisuuri riski  
+(esim. henkilötietojen käsittely kohdistuu tunnistetietoihin tai tarkkoihin yhteystietoihin) 
+ 
+x Korkea riski  
+(esim. henkilötietojen käsittely kohdistuu arkaluontoisiin tietoihin, tarkkoihin 
+sijaintietoihin tai tarkkoihin tunnistetietoihin)  
+ 
+Henkilötietojen ryhmät (valitaan yksi arkaluontoisimman henkilötiedon mukaan): 
+ 
+￿ Tavanomaiset henkilötiedot 
+ 
+x Erityiset eli ns. arkaluontoiset henkilötiedot  
+(rotu tai etninen alkuperä, poliittinen mielipide, uskonnollinen tai filosofinen vakaumus tai 
+ammattiliiton jäsenyys sekä geneettisten tai biometristen tietojen käsittely henkilön 
+yksiselitteistä tunnistamista varten tai terveyttä koskevien tietojen taikka luonnollisen 
+henkilön seksuaalista käyttäytymistä ja suuntautumista koskevien tietojen käsittely)  
+ 
+Henkilötietojen käsittelyn kesto (valitaan yksi):  
+ 
+x Sopimuksen keston ajan 
+ 
+￿ Muu aika (pp.kk.vvvv-pp.kk.vvvv): ___________________________ 
+ 
+Henkilötietojen käsittelyn luonne ja tarkoitus 
+ 
+Jäsenkunta käsittelee henkilötietoja vain Sopimuksen edellyttämässä laajuudessa. 
+ 
+ 

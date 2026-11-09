@@ -1,0 +1,470 @@
+SIVU 1
+1 
+ 
+ 
+ 
+Turun työllisyysalueen yhteistoimintasopimus  
+ 
+Sisällys 
+Turun työllisyysalueen yhteistoimintasopimus ................................ ................................ ....... 1 
+1. Sopimuksen osapuolet ................................ ................................ ........... 2 
+2. Sopimuksen tausta ja tarkoitus ................................ ...............................  2 
+3. Päätöksenteko ja hallinto ................................ ................................ ....... 5 
+3.1 Yleistä ................................ ................................ ................................ ........ 5 
+3.2 Yhteinen toimielin ................................ ................................ ....................... 5 
+3.3 Toimielimen tehtävät ja toimikausi ................................ ..............................  5 
+3.4 Toimielimen kokoonpano ja jäsenten valitseminen ................................ ..... 6 
+3.5 Äänivallan käyttö ................................ ................................ ........................ 7 
+3.6. Otto-oikeus ................................ ................................ ................................  7 
+3.7. Kuntajohtajakokous ................................ ................................ ................... 7 
+3.8. Johtoryhmä ................................ ................................ ...............................  7 
+3.9. Talouden arviointi- ja seurantaryhmä ................................ ........................ 8 
+3.10. Työllisyyden neuvottelukunta ................................ ................................ .. 8 
+4. Henkilöstö ................................ ................................ ..............................  8 
+5. Talous ................................ ................................ ................................ .... 8 
+5.1 Kustannustenjaon perusteet ................................ ................................ ....... 8 
+5.2 Talouden hoito ................................ ................................ ........................... 9 
+5.3 Maksuosuuden suorittaminen ................................ ................................ ... 10 
+6. Asiakkailta perittävät maksut ................................ ................................  10 
+7. Toimitilat ja kalusto ................................ ................................ ............... 10 
+8. Asiakastietojen käsittely ja tietoturva ................................ .................... 11 
+9. Yhteistoimintasopimuksen muuttaminen ja neuvotteluvelvollisuus ....... 11 
+10. Vahingonkorvaus ................................ ................................ ................. 11 
+11. Erimielisyyksien ratkaiseminen ................................ ............................. 12 
+12. Sopimuksen voimassaoloaika ja irtisanominen ................................ ..... 12 
+13. Varautuminen sekä toimivalta normaaliolojen häiriötilanteissa ja 
+poikkeusoloissa ................................ ................................ ..............................  12 
+13.1 Luvun tarkoitus ................................ ................................ ....................... 12 
+13.2 Soveltamisala ................................ ................................ ......................... 12 
+13.3 Erityistoimivallan käyttöönottaminen ................................ ....................... 12 
+¨ ................................ ................................ ................................ ..................... 13 
+14. Allekirjoitukset ................................ ................................ ...................... 13 
+ 
+SIVU 2
+2 
+ 
+ 
+ 
+1. Sopimuksen osapuolet 
+Tämän sopimuksen osapuolena ovat: 
+Vastuukunta:  
+Turun kaupunki 
+Muut osapuolet ja jäsenkunnat:  
+Aura, Kaarina, Kemiönsaari, Kustavi, Laitila, Lieto, Loimaa, Masku, Mynämäki, 
+Naantali, Nousiainen, Oripää, Paimio, Parainen, Pyhäranta, Pöytyä, Raisio, 
+Rusko, Sauvo, Taivassalo, Uusikaupunki ja Vehmaa.  
+Sopimuksen muihin osapuoliin kuin vastuukuntaan viitataan tässä 
+sopimuksessa yhteisesti ”jäsenkunnat”. Kaikkiin sopimuksen osapuoliin 
+yhdessä viitataan ilmaisulla “sopimuksen osapuolet”.  
+2. Sopimuksen tausta ja tarkoitus   
+Vastuu työnhakijoille ja yrityksille ja muille työnantajille tarjottavista 
+työvoimapalveluista siirrettiin valtiolta pääosin kuntien vastuulle 1.1.2025. 
+Työvoimapalveluiden järjestäminen ja muut työvoimapalveluihin liittyvät 
+lakisääteiset tehtävät muodostavat kunnille uuden valtionosuustehtävän. 
+ 
+Tällä yhteistoimintasopimuksella sopimuksen osapuolet sopivat 
+työvoimapalvelujen järjestämisestä annetussa laissa (380/2023) tarkoitettujen 
+julkisten työvoimapalvelujen järjestämisestä. Sopimuksen osapuolet 
+muodostavat työvoimapalveluiden järjestämisen yhteistoiminta-alueen, josta 
+jäljempänä käytetään nimitystä työllisyysalue. Työllisyysalueen kunnat 
+järjestävät järjestämislain mukaiset työvoimapalvelut ja niihin liittyvät tehtävät 
+kuntalain (410/2015) 8 §:n tarkoittamana yhteistoimintana niin sanotulla 
+vastuukuntamallilla kuntalain 51 §:n mukaisesti. Vastuukuntana toimii Turun 
+kaupunki. Lainsäädännön muuttuessa myös yhteistoimintasopimukseen 
+sisältyvät tehtävät muuttuvat vastaavasti. Muista kuin lakisääteisistä 
+palveluista, tehtävistä ja yhteistyöstä sekä niistä aiheutuvista kustannuksista 
+sovitaan erillisin sopimuksin. 
+ 
+Turun työllisyysalue on kaksikielinen. Sen hallinnon ja toiminnan 
+järjestämisessä sekä viestinnässä on otettava huomioon suomen- ja 
+ruotsinkielisten asukkaiden ja palvelujen käyttäjien kielelliset oikeudet. Palvelut 
+on järjestettävä niin, että asukkaita ja palvelujen käyttäjiä pystytään 
+palvelemaan suomeksi tai ruotsiksi. Henkilöstön riittävä suomen ja ruotsin 
+SIVU 3
+3 
+ 
+ 
+ 
+kielen taito on varmistettava. Viranhaltijoilta ja työntekijöiltä vaadittavasta 
+kielitaidosta on voimassa, mitä erikseen on määrätty tai päätetty. Toimielinten 
+kokouskutsun, esityslistan ja pöytäkirjan laatimisesta sekä suomen että ruotsin 
+kielellä määrätään kielilain 29 §:ssä (29.6.2021/644). 
+ 
+Turun työllisyysalueen tavoitteena on tarjota henkilö-, yritys- ja työnantaja-
+asiakkaille kattavat ja kustannusvaikuttavat palvelut asiakkaiden kielelliset ja 
+muut tarpeet huomioiden. Työllisyysalueen palvelut tähtäävät osaavan 
+työvoiman saatavuuden varmistamiseen sekä työvoiman kysynnän ja tarjonnan 
+kohtaantoon. Työvoimapalveluja uudistetaan tavalla, joka parantaa niiden 
+saatavuutta, saavutettavuutta ja vaikuttavuutta. Palveluja tarjoava 
+toimipisteverkko on laajentunut vuoden 2023 tilanteesta TE-palveluiden ja 
+työllisyyden edistämisen kuntakokeilun toimipisteiden pohjalta. Osa palveluista 
+ja tehtävistä keskitetään vastuukunnalle. Jäsenkunta voi halutessaan tarjota 
+palveluja sen itse tuottamina viranomaistehtävinä. Palveluja tuottavilla 
+jäsenkunnilla voi olla rooli keskitettyjen palvelujen toteutuksessa.  
+ 
+Sopimuksen osapuolet sitoutuvat siihen, että sen toiminta tämän sopimuksen 
+osapuolena täyttää lainsäädännön, osaltaan sovellettavan Turun kaupungin 
+säännöstön sekä viranomaismääräysten vaatimukset. 
+ 
+Vastuukunta vastaa kuntalain 8 §:n 2 momentin mukaisesti palvelujen ja 
+muiden toimenpiteiden 
+1. yhdenvertaisesta saatavuudesta, 
+2. tarpeen, määrän ja laadun määrittelemisestä, 
+3. tuottamistavasta, 
+4. tuottamisen valvonnasta ja 
+5. viranomaiselle kuuluvan toimivallan käyttämisestä. 
+Kuntalain 8 §:n 3 momentin mukaisesti kunta vastaa tehtäviensä rahoituksesta, 
+vaikka järjestämisvastuu on siirretty toiselle kunnalle tai kuntayhtymälle.  
+ 
+Työvoimapalveluiden järjestämisvastuu ja siihen liittyvät tehtävät siirtyivät 
+vastuukunnalle eli Turun kaupungille. Järjestämisvastuussa olevan kunnan 
+työvoimaviranomaiselle kuuluvaa toimivaltaa voidaan delegoida 
+SIVU 4
+4 
+ 
+ 
+ 
+työllisyysalueen jäsenkunnalle siten kuin kuntalain 54 §:ssä säädetään 
+sopimuksesta viranomaistehtävän hoitamiseksi. Sopimus viranomaistehtävään 
+liittyvän toimivallan siirtämisestä järjestämisvastuussa olevalta kunnalta 
+työllisyysalueen muulle kunnalle on tehtävä yhteisessä toimielimessä. Mikäli 
+jäsenkunta ei kykene järjestämään sille delegoituja tehtäviä tämän sopimuksen 
+mukaisesti, on vastuukunnalla vastuu palveluiden tuottamisesta. Tällöin 
+vastuukunnalla on oikeus periä palveluiden järjestämisestä aiheutuneet 
+kustannukset jäsenkunnalta täysimääräisesti yleiskustannuskerroin 
+huomioiden. Vastuukunnalla on oikeus määritellä tapa, jolla se tuottaa palvelut 
+jäsenkunnalle. 
+Sopimuksen osapuolet sitoutuvat kehittämään työllisyysalueen yhteistä 
+toimintamallia työllisyysalueen eduksi ja toimimaan sen mukaisesti. 
+Toimintamallissa huomioidaan kuntien erilaisuus. 
+ 
+Turun työllisyysalueen toimintamallin toimivuutta ja delegointipäätöksiä 
+tarkastellaan valtuustokausittain. 
+  
+SIVU 5
+5 
+ 
+ 
+ 
+3. Päätöksenteko ja hallinto 
+3.1 Yleistä 
+Tässä sopimuksessa mainittujen tehtävien (työvoimapalveluiden lakisääteiset 
+tehtävät) vastuukunta on Turun kaupunki. Päätöksenteossa ja hallinnossa 
+noudatetaan kuntia koskevaa lainsäädäntöä sekä Turun kaupungin sääntöjä, 
+määräyksiä ja ohjeita. 
+Mikäli vastuukunnan hallintosääntöä muutetaan sopimuksen kohteena olevien 
+viranomaistehtävien järjestämisen osalta, kuulee vastuukunta jäsenkuntia 
+ennen muutosta. Jäsenkuntien on mahdollista lausua asiasta kirjallisesti. 
+3.2 Yhteinen toimielin 
+Turun työllisyysalueen toimielin on lautakunta, joka toimii kuntalain 51 §:n 
+(29.12.2016/1484) mukaisesti osana Turun kaupungin organisaatiota 
+työvoimapalveluiden lakisääteisten tehtävien järjestämisessä sopimuksen 
+osapuolten yhteisenä monijäsenisenä toimielimenä ja työllisyysalueen 
+työvoimaviranomaisena. 
+Toimielimen asioiden valmistelusta ja toimeenpanosta huolehtii vastuukunta. 
+Toimielimen esittelijänä toimii Turun kaupungin johtava viranhaltija ja hänen 
+estyneenä ollessaan hänen sijaisekseen määrätty tai molempien estyneenä 
+ollessa toimielimen määräämä viranhaltija. Vastuukunta kuulee jäsenkuntia 
+johtavan viranhaltijan valinnassa. 
+3.3 Toimielimen tehtävät ja toimikausi 
+Työvoimapalveluiden järjestämisestä ja muista työvoimapalveluihin liittyvistä 
+lakisääteisistä tehtävistä säädetään työvoimapalveluiden järjestämisestä 
+annetussa laissa (380/2023). Toimielimen tehtävänä on huolehtia, että edellä 
+mainitun lain mukaisia työvoimapalveluiden järjestämiseen liittyviä velvoitteita 
+noudatetaan.  
+Toimielimen tehtävät ovat:  
+1. vastata toimialansa toiminnan, talouden ja organisaation kehittämisestä,   
+2. ohjata toimintaa tavoitteiden ja strategian mukaisesti,   
+3. valvoa, että toimintaa johdetaan tarkoituksenmukaisesti, tehokkaasti ja 
+taloudellisesti,   
+4. huolehtia yhteistyöstä palvelujen järjestämisessä ja kehittämisessä muiden 
+kuntien, viranomaisten, koulutuksenjärjestäjien sekä yhteisöjen kanssa ja  
+SIVU 6
+6 
+ 
+ 
+ 
+5. seurata toiminnan tuloksellisuutta. 
+Toimielin voi päättää sille vastuukunnan hallintosäännöllä siirretyn tai laissa 
+säädetyn toimivallan siirtämisestä alaiselleen viranomaiselle, ellei 
+lainsäädännössä ole toisin määrätty.  
+Toimielimen toimikausi on valtuustokausi. 
+3.4 Toimielimen kokoonpano ja jäsenten valitseminen 
+Toimielimessä on kolmetoista (13) sopimuksen osapuolten valtuustojen 
+toimikaudekseen valitsemaa jäsentä.  
+Turun kaupunginvaltuusto valitsee kuusi (6) jäsentä ja kullekin 
+henkilökohtaisen varajäsenen. 
+Turun itäisten kuntien: Kaarinan kaupungin, Liedon kaupungin, Paimion 
+kaupungin ja Sauvon kunnan valtuustot valitsevat toimielimeen kaksi (2) 
+jäsentä ja näille henkilökohtaiset varajäsenet. Varajäsenten on oltava eri 
+kunnista kuin jäsenten. 
+Turun läntisten kuntien: Maskun kunnan, Mynämäen kunnan, Naantalin 
+kaupungin, Nousiaisten kunnan, Raision kaupungin ja Ruskon kunnan 
+valtuustot valitsevat toimielimeen kaksi (2) jäsentä ja näille henkilökohtaiset 
+varajäsenet. Varajäsenten on oltava eri kunnista kuin jäsenten. 
+Vakka-Suomen seudun kuntien: Kustavin kunnan, Laitilan kaupungin, 
+Pyhärannan kunnan, Taivassalon kunnan, Uudenkaupungin kaupungin ja 
+Vehmaan kunnan valtuustot valitsevat toimielimeen yhden (1) jäsenen ja tälle 
+henkilökohtaisen varajäsenen. Varajäsenen on oltava eri kunnasta kuin 
+jäsenen. 
+Loimaan seudun kuntien: Auran kunnan, Loimaan kaupungin, Oripään kunnan 
+ja Pöytyän kunnan valtuustot valitsevat toimielimeen yhden (1) jäsenen ja tälle 
+henkilökohtaisen varajäsenen. Varajäsenen on oltava eri kunnasta kuin 
+jäsenen.  
+Turunmaan seudun kuntien: Paraisten kaupungin ja Kemiönsaaren kunnan 
+valtuustot valitsevat toimielimeen yhden (1) jäsenen ja tälle henkilökohtaisen 
+varajäsenen. Varajäsenen on oltava eri kunnasta kuin jäsenen. 
+Turun kaupunginvaltuusto valitsee toimielimen jäsenistä puheenjohtajan ja 
+varapuheenjohtajan. Puheenjohtaja on valittava Turun kaupunginvaltuuston 
+nimeämistä jäsenistä ja varapuheenjohtaja jäsenkuntien nimeämistä jäsenistä. 
+SIVU 7
+7 
+ 
+ 
+ 
+Varapuheenjohtaja vaihtuu vuosittain kuntien suomenkielisen nimen 
+aakkosjärjestyksen mukaisesti. 
+Toimielimen kokoonpanoa tarkastellaan toimikausittain. Mahdollisista 
+muutoksista toimielimen kokoonpanoon on sovittava kirjallisesti sopimuksen 
+osapuolien kesken tai tämän sopimuksen muutoksella. 
+Kunkin sopimuksen osapuolen nimeämällä viranhaltijalla on läsnäolo- ja 
+puheoikeus kokouksissa. 
+3.5 Äänivallan käyttö 
+Toimielimen päätökset pyritään tekemään yksimielisesti. Mahdollisissa 
+äänestystilanteissa kullakin toimielimen jäsenellä on yksi ääni. Äänestys 
+toimitetaan avoimesti. Päätökseksi tulee ehdotus, joka on saanut eniten ääniä, 
+tai äänten mennessä tasan ehdotus, jota puheenjohtaja on äänestänyt. 
+Henkilövaalissa äänien mennessä tasan valinnan ratkaisee arpa.  
+3.6. Otto-oikeus 
+Yhteisen toimielimen käsittelemä asia voidaan ottaa ylemmän toimielimen 
+käsiteltäväksi sen mukaisesti kuin Turun kaupungin hallintosäännössä otto-
+oikeuden käyttämisestä säädetään. Turun kaupunki voi käyttää otto-oikeutta 
+lautakunnan päätöksiin, mikäli lautakunnan päätös on 
+yhteistoimintasopimuksen, lain, määräysten tai valtuuston 
+talousarviopäätöksen vastainen, rikkoo kuntien yhdenmukaista kohtelua taikka 
+aiheuttaa vahinkoa tai haittaa sopimuksen osapuolelle. 
+Ennen otto-oikeuden mukaista ylemmän toimielimen käsittelyä asia tulee 
+käsitellä kuntajohtajakokouksessa. Niille kunnille, joita asia koskee, tulee 
+varata tilaisuus lausua asiassa. Otto-oikeuden käyttämistä voi pyytää mikä 
+tahansa jäsenkunta. 
+3.7. Kuntajohtajakokous 
+Kuntajohtajakokouksen tehtävänä on seurata ja ohjata työllisyysalueen 
+toiminnan ja talouden toteutunutta ja tulevaa kehitystä sekä toimielimen 
+tekemien päätösten toimeenpanoa. Kuntajohtajakokouksessa ovat 
+edustettuina kaikki työllisyysalueen kunnat. Sen muodostavat työllisyysalueen 
+kuntien kunnanjohtajat tai heidän varahenkilönsä. Vastuukunta toimii 
+kuntajohtajakokouksen puheenjohtajana. 
+3.8. Johtoryhmä 
+Johtoryhmän tehtävänä on operatiivinen ohjaus ja toimielimen päätösten 
+toimeenpano. Sen muodostavat työllisyysalueen kuntien johtavat 
+substanssiviranhaltijat. Jokainen kunta voi nimetä jäsenen johtoryhmään. 
+Vastuukunta toimii johtoryhmän puheenjohtajana. 
+SIVU 8
+8 
+ 
+ 
+ 
+3.9. Talouden arviointi- ja seurantaryhmä 
+Talousjohtajien arviointi- ja seurantaryhmän tehtävänä seurata ja arvioida 
+työllisyysalueen talouden toteutunutta kehitystä ja tukea talouden suunnittelua 
+ja seurantaa. Lisäksi arviointi- ja seurantaryhmän tehtävänä on työllisyysalueen 
+rahoitus- ja kustannustenjakomallin arviointi ja kehittämisehdotusten 
+laatiminen. Ryhmän muodostavat työllisyysalueen kuntien talousjohtajat. 
+Vastuukunta toimii ryhmän puheenjohtajana. Ryhmä kokoontuu kaksi kertaa 
+vuodessa.  
+3.10. Työllisyyden neuvottelukunta 
+Työllisyyden neuvottelukunta on osaavan työvoiman saatavuuden ja 
+kohtaannon edistämisen ekosysteemitoimijoiden yhteistoimintaverkosto. Sen 
+tehtävänä on työllisyyden, elinkeinotoiminnan, koulutuksen, maahanmuuton ja 
+kotoutumisen edistämisen, sosiaali- ja terveydenhuollon, asumisen ja 
+ympäristön sekä muun osaavan työvoiman saatavuutta ja kohtaantoa 
+edistävän toiminnan palveluiden yhteensovittaminen ja kehittäminen. 
+Työllisyyden neuvottelukunnassa ovat edustettuina koulutuksen järjestäjät ja 
+muut julkisen, yksityisen ja kolmannen sektorin toimijat. Vastuukunta kutsuu 
+neuvottelukunnan koolle. 
+4. Henkilöstö 
+Turun työllisyysalueen vastuukunta Turku delegoi toimivaltaa lakisääteisten 
+tehtävien hoidosta kahdeksalle (8) lähipalveluja tuottavalle 
+jäsenkunnalle. Työllisyysalueen 54§ sopimuksessa on määritelty ne 
+viranhaltijat, joille delegoidaan työvoimaviranomaisen tehtäviin 
+liittyvä toimivalta lähipalvelujen tuottamisessa oman kuntansa toiminta-
+alueella. Lakisääteisiä palveluita tuottava jäsenkunta palkkaa 
+oman henkilöstönsä viranomaistehtävien hoitoon.  Sopimuksen osapuolet 
+sitoutuvat kehittämään työllisyysalueen yhteistä henkilöstöpolitiikkaa. 
+Työllisyysalueella työvoimapalveluja toteuttavan henkilöstön toimintakäytäntöjä 
+yhtenäistetään mahdollisuuksien mukaan kunkin työnantajan 
+henkilöstöpolitiikan puitteissa. 
+5. Talous 
+5.1 Kustannustenjaon perusteet 
+Sopimuksen osapuolien suhteellinen prosenttiosuus kaikkien sopimuksen 
+osapuolten TE-palveluiden rahoitussiirtoon liittyvistä työllisyyden 
+valtionosuuksista määrää sopimuksen osapuolen rahoitusosuuden 
+työllisyysalueen yhteisten palvelujen nettokuluista.  
+SIVU 9
+9 
+ 
+ 
+ 
+Kustannuksia kohdennetaan aiheuttamisperiaatteen mukaan edellyttäen, että 
+laskutusta varten on saatavissa riittävä ja luotettava tieto sekä 
+kustannustenjako ja laskutus on toteutettavissa kohtuullisin kustannuksin. 
+Kustannukset, jotka saadaan suoraan maksatusjärjestelmästä, kohdennetaan 
+käytön mukaan aiheuttamisperusteisesti.  
+5.2 Talouden hoito 
+Turun työllisyysalueen talous on osa Turun kaupungin talousarviota, 
+taloussuunnittelua ja kirjanpitoa. Työllisyysalueen toiminta muodostaa 
+kirjanpidollisen budjettiyksikön jolla yhteistoiminta-alueen piiriin kuuluvan 
+toiminnan talous eriytetään kirjanpidossa. Budjettiyksikölle kohdistetaan 
+työllisyysalueen yhteistoiminnan toteutuneet nettokustannukset.  
+Yhteinen toimielin laatii Turun kaupunginvaltuustolle esityksen seuraavan 
+kalenterivuoden talousarvioksi ja seuraavien suunnitelmavuosien 
+taloussuunnitelmaksi. Talousarvioon sisällytetään yhteistoiminnan tavoitteet ja 
+niiden edellyttämät määrärahat. Talousarvio on laadittava siten, että 
+edellytykset yhteistoiminnan hoitamiseen turvataan. Yhteistoiminnan tehtävissä 
+ja niiden rahoituksessa on noudatettava talousarviota. 
+Yhteistoiminnan toteutuneet nettokustannukset jaetaan sopimuksen 
+osapuolten kesken. Sopimuksen osapuolet maksavat osuutensa 
+nettokustannuksista kuntakohtaisina maksuosuuksina. Jäsenkunnilta perittäviin 
+maksuosuuksiin sisältyvät mahdollisista yhteistoiminnan investoinneista 
+aiheutuvat poistot ja arvonalentumiset sekä rahoituskulut. 
+Tilanteessa, jossa vastuukunta delegoi toimivaltaa työllisyysalueen 
+jäsenkunnalle siten kuin kuntalain 54 §:ssä säädetään sopimuksesta 
+viranomaistehtävän hoitamiseksi, rahoitus palvelujen tuottamiseen 
+kohdennetaan vastuukunnan sijaan kyseiselle jäsenkunnalle. Jäsenkunta 
+vastaa sille delegoiduista tehtävistä aiheutuvista kustannuksista ja 
+investoinneista. Muun kuin vastuukunnan tuottaessa palveluja toiselle 
+jäsenkunnalle, voivat nämä kunnat sopia keskinäisin sopimuksin palveluiden 
+tuottamisen rahoituksen käytöstä sekä mahdollisesta lisärahoituksesta. 
+Yhteiselle toimielimelle raportoidaan talouden seuranta Turun kaupungin 
+talouden seurannan vuosikellon mukaan, lähtökohtaisesti kolme kertaa 
+tilikauden aikana osavuosikatsauksissa sekä tilinpäätöksen yhteydessä. 
+Osavuosikatsaukset lähetetään jäsenkunnille. 
+SIVU 10
+10 
+ 
+ 
+ 
+Aiheuttamisperusteisuutta kustannustenjaossa lisätään vaiheittain. 
+Tilikauden aikana mahdollisesti hyväksyttävien talousarviomuutosten on 
+perustuttava määrärahojen, tuloerien sekä tavoitteiden osalta toiminnan tai 
+palveluiden käytön taikka talouden yleisten perusteiden tilikauden aikana jo 
+tapahtuneisiin tai arvioitaviin muutoksiin. Talousarvion muutosesitykset 
+käsitellään yhteisessä toimielimessä ja esitys talousarvion muuttamiseksi 
+annetaan jäsenkunnille tiedoksi ennen valtuuston kokousta.  Talousarvioon 
+tehtävistä muutoksista päättää Turun kaupunginvaltuusto yhteisen toimielimen 
+esityksestä. 
+5.3 Maksuosuuden suorittaminen 
+Vastuukunta laskuttaa työllisyysalueen muita tämän sopimuksen osapuolena 
+olevia jäsenkuntia näiden maksuosuuksista neljä kertaa vuodessa 
+vastuukunnan talousseurannan vuosikellon mukaisesti. Mahdollinen tasaus 
+tehdään tilivuoden päättymistä seuraavan vuoden helmikuun loppuun 
+mennessä. 
+Mikäli tämän sopimuksen osapuolena oleva jäsenkunta ei maksa 
+vastuukunnan laskuttamaa maksuosuutta viimeistään vastuukunnan 
+asettamana eräpäivänä, määrälle on maksettava vuotuista viivästyskorkoa 
+korkolain 4 §:n mukaisen korkokannan mukaan. 
+6. Asiakkailta perittävät maksut 
+Henkilöasiakkaalle tarjottavat julkiset työvoimapalvelut ovat maksuttomia. 
+Työnantajalle tarjottavat julkiset työvoimapalvelut ovat maksuttomia lukuun 
+ottamatta työvoimapalveluiden järjestämisestä annetun lain 62 §:ssä 
+tarkoitettua yhteishankintakoulutusta.  
+Jos palvelusta voidaan periä lakiin perustuvia maksuja, ne määräytyvät 
+vastuukunnan vahvistamien periaatteiden ja päätösten mukaan. Maksujen 
+perinnästä vastaa vastuukunta.  
+7. Toimitilat ja kalusto 
+Keskitettyjen palvelujen ja tehtävien osalta vastuukunta järjestää niitä 
+hoitavalle henkilöstölle tilat ja kalusteet. Jokainen työllisyysalueen kunta 
+osallistuu keskitettyjen palveluiden toimitilojen ja kaluston kustannuksiin. 
+Vastuukunnan omien palvelujen ja kuntalain 54 §:n mukaisesti delegoitujen 
+tehtävien osalta työllisyysalueen kunnat vastaavat työvoimapalvelujen 
+hoitamiseen liittyvistä tila- ja kalustotarpeista, mikäli ei toisin ole sovittu.  
+SIVU 11
+11 
+ 
+ 
+ 
+8. Asiakastietojen käsittely ja tietoturva  
+Työhallinnon asiakastiedot ovat salassa pidettäviä viranomaisten julkisuudesta 
+annetun lain (621/1999, julkisuuslaki) 24 §:n 1 mom. 25 kohdan mukaan.   
+Asiakastietojen osalta rekisterinpitäjänä toimii vastuukunta.  Vastuukunta 
+vastaa tämän sopimuksen mukaisen työllisyysalueen palvelujen tuottamisessa 
+syntyvästä asiakastiedosta.   
+Vastuukunta vastaa tämän sopimuksen mukaisen työllisyysalueen palvelujen 
+tuottamisessa ja toiminnasta kertyvien asiakirjojen ja tiedostojen 
+tiedonhallinnon suunnittelusta ja ohjeistuksesta sekä salassapidosta, 
+asiakirjapyyntöihin vastaamisesta ja tietojen antamisesta. Toiminnassa 
+noudatetaan Turun kaupungin voimassa olevia tietoturva- ja 
+tietosuojaohjeistuksia. Kukin jäsenkunta vastaa tietoturvasta ja tietosuojasta 
+järjestelmiensä ja toimintansa osalta.  
+9. Yhteistoimintasopimuksen muuttaminen ja neuvotteluvelvollisuus 
+Sopimuksen osapuolet voivat muuttaa tätä sopimusta kirjallisesti, muut 
+muutokset ovat mitättömiä. Muutokset tulevat voimaan, kun sopimuksen 
+osapuolet ovat ne asianmukaisesti hyväksyneet ja allekirjoittaneet osapuolten 
+toimivaltaisten edustajien toimesta. Jos työllisyysalue muuttuu, 
+sopimusperusteita tarkistetaan.  Muutokset kirjataan ja liitetään sopimukseen.  
+Sopimuksen osapuolilla on velvollisuus neuvotella tähän sopimukseen 
+tehtävistä mahdollisista muutoksista, mikäli sopimuksen perusteena olevissa 
+olosuhteissa tai kustannusperusteissa tapahtuu olennainen muutos, jota 
+osapuolet eivät ole voineet kohtuudella ennakoida sopimusta tehtäessä. 
+Neuvotteluiden yhteydessä tarkastellaan sopimuksen mukaista toimintamallia 
+ja sovitaan sopimukseen tehtävistä mahdollisista muutoksista. Vastuukunta 
+kutsuu koolle neuvottelut ja toimii niiden puheenjohtajana. Sopimusta 
+tarkastellaan kuitenkin aina valtuustokausittain.  
+10. Vahingonkorvaus  
+Tämän sopimuksen mukaisten tehtävien hoitamisesta mahdollisesti 
+aiheutuvien vahinkojen vastuut määräytyvät vahingonkorvauslain perusteella. 
+Turun kaupungin vastuulla työnantajana tai muutoin vastuukuntana olevien 
+vahinkojen kustannukset kirjataan yhteisiin kustannuksiin, jotka jaetaan kohdan 
+5 mukaisesti.    
+SIVU 12
+12 
+ 
+ 
+ 
+11. Erimielisyyksien ratkaiseminen  
+Sopimuksesta johtuvat erimielisyydet pyritään ratkaisemaan ensisijaisesti 
+sopimuksen osapuolten välisissä neuvotteluissa. Ellei neuvotteluissa löydetä 
+ratkaisua, erimielisyydet ratkaistaan hallintoriita-asiana Turun hallinto-
+oikeudessa tai ellei asia kuulu hallinto-oikeuden toimivaltaan, Varsinais-
+Suomen käräjäoikeudessa.  
+12. Sopimuksen voimassaoloaika ja irtisanominen  
+Tämä sopimus astuu voimaan, kun kaikki sopimuksen osapuolet ovat sen 
+allekirjoittaneet. Sopimus on voimassa toistaiseksi. Sopimuksen osapuoli - 
+vastuukunta tai jäsenkunta - voi irtisanoa sopimuksen päättymään 
+kalenterivuoden alussa ilmoittamalla irtisanomisesta kirjallisesti muille 
+sopimuksen osapuolille vähintään kahdeksantoista (18) kuukautta ennen 
+sopimuksen päättymistä. Mikäli jäsenkunta irtisanoo sopimuksen, sopimus 
+päättyy irtisanomisen perusteella ainoastaan irtisanoutuneen jäsenkunnan 
+osalta.  Mikäli vastuukunta irtisanoutuu sopimuksesta, päättyy sopimuksen 
+voimassaolo kaikkien muidenkin sopimusosapuolien välillä. Vastuukunnalla on 
+lisäksi oikeus irtisanoa sopimus yksittäisen jäsenkunnan kanssa, mikäli 
+jäsenkunta olennaisesti rikkoo sopimuksen ehtoja eikä korjaa menettelyään 
+kohtuullisessa ajassa kirjallisen huomautuksen saatuaan. 
+Sopimuksen osapuoli sitoutuu tämän sopimuksen mukaisiin kustannuksiin 
+irtisanomisajan päättymiseen saakka. 
+13.  Varautuminen sekä toimivalta normaaliolojen häiriötilanteissa ja poikkeusoloissa 
+ 
+13.1 Luvun tarkoitus 
+Tämän luvun tarkoituksena on määritellä poikkeusoloissa ja normaaliolojen 
+häiriötilanteissa sovellettavat erityistoimivaltaa koskevat määräykset.  
+13.2 Soveltamisala 
+Tätä lukua sovelletaan häiriötilanteissa ja valmiuslaissa määritellyissä 
+poikkeusoloissa sekä niihin valmistautumisessa. Häiriötilanteilla tarkoitetaan 
+tapahtumia ja tilanteita, jotka edellyttävät työllisyysalueen johtamisessa tai 
+palvelutuotannossa normaalioloista poikkeavia toimenpiteitä, tehtäviä ja 
+toimivaltuuksia.  
+Poikkeusoloja ovat valmiuslaissa määritellyt tilanteet.  
+13.3 Erityistoimivallan käyttöönottaminen 
+Erityistoimivallan käyttöönottamisesta ja sen edellytyksistä poikkeusoloissa tai 
+normaaliolojen häiriötilanteissa on säädetty vastuukunnan hallintosäännössä. 
+Sopijapuolet sitoutuvat noudattavamaan vastuukunnan hallintosäännössä 
+määriteltyjä menettelyjä ja toimivaltajärjestelyjä.  
+SIVU 13
+13 
+ 
+ 
+ 
+¨ 
+ 
+14. Allekirjoitukset  
+ 

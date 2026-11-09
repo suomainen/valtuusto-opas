@@ -1,0 +1,47 @@
+{
+  "meeting": {
+    "city": "Esimerkkikunta",
+    "date": "12.5.2027",
+    "time": "Klo 18.00",
+    "venue": "Valtuustosali",
+    "reviewed": "10.5.2027",
+    "stage": "Tarkastelu perustuu kokouksen esityslistaan.",
+    "coverage": "Tarkistettu yksi pykälä ja sen julkinen liite.",
+    "url": "https://example.org/esityslista"
+  },
+  "overview": {
+    "title": "Palvelumaksu esitetään korotettavaksi",
+    "lead": "Ehdotus nostaisi kuukausimaksua 5 euroa.",
+    "stats": [
+      {"label": "Kuukausimaksu", "value": "25 €", "note": "Voimassa 20 €. Ehdotus 25 €."}
+    ],
+    "highlights": [
+      {"n": 7, "title": "Palvelumaksu", "text": "Kuukausimaksuun ehdotetaan 5 euron korotusta."}
+    ]
+  },
+  "items": [
+    {
+      "n": 7,
+      "title": "Palvelumaksun tarkistus",
+      "short": "Palvelumaksu",
+      "tag": "Maksut",
+      "critical": true,
+      "url": "https://example.org/pykala-7",
+      "facts": ["Kuukausimaksuksi esitetään 25 euroa 1.8.2027 alkaen."],
+      "assessment": "Korotuksen vaikutus kunnan tuloihin riippuu käyttäjämäärästä.",
+      "risks": ["Päätöksen käyttäjävaikutuksista ei ole laskelmaa."],
+      "questions": ["Kuinka monen käyttäjän maksua muutos koskee?"],
+      "comparison": {
+        "note": "Vertailu koskee samaa palvelua ja kuukausimaksua.",
+        "rows": [["Kuukausimaksu", "20 € · voimassa", "25 € · ehdotus 1.8.2027", "+5 € / kk"]],
+        "sources": [["Maksutaulukko, s. 2", "https://example.org/maksut.pdf#page=2"]]
+      },
+      "attachments": [
+        {"title": "Maksutaulukko", "status": "Luettu", "summary": "Taulukossa näkyvät nykyinen ja ehdotettu maksu.", "url": "https://example.org/maksut.pdf"}
+      ]
+    }
+  ],
+  "issues": [
+    {"n": 7, "type": "Täydentävä tieto", "title": "Käyttäjämäärä", "text": "Käyttäjämäärää ei kerrota julkisessa aineistossa."}
+  ]
+}
